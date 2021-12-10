@@ -6,7 +6,7 @@ This software is distributed under the terms of the Apache License, Version 2.0.
 
 ## Introduction
 
-This is a shared library for [mod-data-export-spring](https://github.com/folio-org/mod-data-export-spring) 
+This is the central repository for the models for [mod-data-export-spring](https://github.com/folio-org/mod-data-export-spring) 
 and [mod-data-export-worker](https://github.com/folio-org/mod-data-export-worker) modules.
 
 ## Overview

@@ -4,6 +4,11 @@
   "ScheduleParameters": {
     "type": "object",
     "properties": {
+      "id": {
+        "description": "Schedule unique identifier",
+        "type": "string",
+        "format": "uuid"
+      },
       "scheduleFrequency": {
         "type": "integer",
         "description": "Number of time periods"

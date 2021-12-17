@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "purchase order line details",
+  "Details": {
+    "type": "object",
+    "properties": {
+      "receivingNote": {
+        "description": "notes regarding receiving instructions",
+        "type": "string"
+      },
+      "productIds": {
+        "description": "a list of product identifiers",
+        "type": "array",
+        "items": {
+          "$ref": "product_identifier.json#/ProductIdentifier"
+        }
+      },
+      "subscriptionFrom": {
+        "description": "the start date of the subscription",
+        "type": "string",
+        "format": "date-time"
+      },
+      "subscriptionInterval": {
+        "description": "the subscription interval in days",
+        "type": "integer"
+      },
+      "subscriptionTo": {
+        "description": "the end date of the subscription",
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "additionalProperties": false
+  }
+}

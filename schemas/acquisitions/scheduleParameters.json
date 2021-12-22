@@ -20,6 +20,7 @@
           "WEEK",
           "DAY",
           "HOUR",
+          "EXACT_DATE",
           "NONE"
         ]
       },
@@ -48,6 +49,11 @@
             "SUNDAY"
           ]
         }
+      },
+      "timeZone": {
+        "type": "string",
+        "description": "Schedule time zone",
+        "default": "UTC"
       }
     }
   }

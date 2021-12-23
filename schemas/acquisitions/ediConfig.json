@@ -47,32 +47,6 @@
       "notes": {
         "description": "The notes for this EDI",
         "type": "string"
-      },
-      "sendAccountNumber": {
-        "description": "The setting to send the account number for this EDI",
-        "type": "boolean"
-      },
-      "supportInvoice": {
-        "description": "The setting to support invoice for this EDI",
-        "type": "boolean"
-      },
-      "supportOrder": {
-        "description": "The setting to support order for this EDI",
-        "type": "boolean"
-      },
-      "vendorEdiCode": {
-        "description": "The organization code for this EDI",
-        "type": "string"
-      },
-      "vendorEdiType": {
-        "description": "The organization type for this EDI",
-        "type": "string",
-        "enum": [
-          "014/EAN",
-          "31B/US-SAN",
-          "091/Vendor-assigned",
-          "092/Customer-assigned"
-        ]
       }
     }
   }

@@ -9,25 +9,20 @@
         "type": "string",
         "format": "uuid"
       },
-      "defaultAcquisitionMethods": {
-        "description": "Default acquisition methods for the vendor",
-        "type": "array",
-        "items": {
-          "description": "UUID of the acquisition method",
-          "type": "string",
-          "format": "uuid"
-        }
+      "configName": {
+        "description": "Configuration name",
+        "type": "string"
       },
-      "defaultEdiConfig": {
-        "description": "Default EDI config for this vendor",
+      "configDescription": {
+        "description": "Configuration description",
+        "type": "string"
+      },
+      "ediConfig": {
+        "description": "EDI config for this vendor",
         "$ref": "ediConfig.json#/EdiConfig"
       },
-      "ediConfigs": {
-        "type": "array",
-        "items": {
-          "description": "List of available EDI export configurations",
-          "$ref": "ediConfig.json#/EdiConfig"
-        }
+      "ediSchedule": {
+        "$ref": "ediSchedule.json#/EdiSchedule"
       }
     }
   }

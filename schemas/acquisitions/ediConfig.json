@@ -20,12 +20,6 @@
           "format": "uuid"
         }
       },
-      "ediFtp": {
-        "$ref": "ediFtp.json#/EdiFtp"
-      },
-      "ediEmail": {
-        "$ref": "ediEmail.json#/EdiEmail"
-      },
       "ediNamingConvention": {
         "description": "The naming convention for this EDI",
         "type": "string"
@@ -44,9 +38,38 @@
           "092/Customer-assigned"
         ]
       },
+      "vendorEdiCode": {
+        "description": "The library code for this EDI",
+        "type": "string"
+      },
+      "vendorEdiType": {
+        "description": "The library type for this EDI",
+        "type": "string",
+        "enum": [
+          "014/EAN",
+          "31B/US-SAN",
+          "091/Vendor-assigned",
+          "092/Customer-assigned"
+        ]
+      },
       "notes": {
         "description": "The notes for this EDI",
         "type": "string"
+      },
+      "sendAccountNumber": {
+        "description": "If true then send account number",
+        "type": "boolean",
+        "default": false
+      },
+      "supportOrder": {
+        "description": "If true then order support",
+        "type": "boolean",
+        "default": false
+      },
+      "supportInvoice": {
+        "description": "If true then invoice support",
+        "type": "boolean",
+        "default": false
       }
     }
   }

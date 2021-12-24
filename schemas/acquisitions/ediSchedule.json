@@ -4,17 +4,8 @@
   "EdiSchedule": {
     "type": "object",
     "properties": {
-      "notificationOptions": {
-        "description": "The setting to notify receivers when this EDI job runs",
-        "type": "string",
-        "enum": [
-          "ERROR_ONLY",
-          "INVOICE_ONLY",
-          "ALL_EDI"
-        ]
-      },
       "enableScheduledExport": {
-        "description": "Whether or not to enable scheduled batch voucher exports",
+        "description": "Whether or not to enable scheduled for exports",
         "type": "boolean",
         "default": false
       },
@@ -23,10 +14,6 @@
       },
       "schedulingNotes": {
         "description": "The schedule notes for this EDI job",
-        "type": "string"
-      },
-      "sendToEmails": {
-        "description": "The comma delimited list of email addresses to notify when this EDI job runs",
         "type": "string"
       }
     }

@@ -17,6 +17,7 @@
         "type": "string",
         "description": "Time period for repeating job",
         "enum": [
+          "MONTH",
           "WEEK",
           "DAY",
           "HOUR",

@@ -21,8 +21,16 @@
         "description": "EDI config for this vendor",
         "$ref": "ediConfig.json#/EdiConfig"
       },
+      "ediFtp": {
+        "$ref": "ediFtp.json#/EdiFtp"
+      },
       "ediSchedule": {
         "$ref": "ediSchedule.json#/EdiSchedule"
+      },
+      "isDefaultConfig": {
+        "description": "If true then config is default",
+        "type": "boolean",
+        "default": false
       }
     }
   }

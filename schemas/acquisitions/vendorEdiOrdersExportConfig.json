@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
       "exportConfigId" : {
-        "description": "UUID of the export configuration. Needs to find Jobs by export config UUID",
+        "description": "UUID of the export configuration. Needed to find Jobs by export config UUID",
         "type": "string",
         "format": "uuid"
       },

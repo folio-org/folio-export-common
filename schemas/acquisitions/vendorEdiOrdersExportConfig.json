@@ -4,6 +4,11 @@
   "VendorEdiOrdersExportConfig": {
     "type": "object",
     "properties": {
+      "exportConfigId" : {
+        "description": "UUID of the export configuration. Needs to find Jobs by export config UUID",
+        "type": "string",
+        "format": "uuid"
+      },
       "vendorId": {
         "description": "UUID of the acquisition method",
         "type": "string",

@@ -1,41 +1,43 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Export orders or order lines history",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "UUID of this history record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
-    "exportJobId": {
-      "description": "UUID of the export Job",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
-    "exportType": {
-      "description": "Export type",
-      "type": "string"
-    },
-   "exportDate": {
-      "description": "Export date",
-      "type": "string",
-      "format": "date-time"
-    },
-    "exportedPoLineIds": {
-      "description": "References the purchase order lines associated to the export",
-      "id": "exportedPoLineIds",
-      "type": "array",
-      "items": {
-        "description": "UUID of the purchase order line",
+  "ExportHistory": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "UUID of this history record",
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      },
+      "exportJobId": {
+        "description": "UUID of the export Job",
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      },
+      "exportType": {
+        "description": "Export type",
         "type": "string"
+      },
+      "exportDate": {
+        "description": "Export date",
+        "type": "string",
+        "format": "date-time"
+      },
+      "exportedPoLineIds": {
+        "description": "References the purchase order lines associated to the export",
+        "id": "exportedPoLineIds",
+        "type": "array",
+        "items": {
+          "description": "UUID of the purchase order line",
+          "type": "string"
+        }
       }
-    }
-  },
-  "additionalProperties": false,
-  "required": [
-    "exportType",
-    "exportJobId",
-    "exportDate"
-  ]
+    },
+    "additionalProperties": false,
+    "required": [
+      "exportType",
+      "exportJobId",
+      "exportDate"
+    ]
+  }
 }

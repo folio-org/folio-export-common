@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of purchase order records",
+  "PurchaseOrderCollection": {
+    "type": "object",
+    "properties": {
+      "purchaseOrders": {
+        "description": "collection of purchase order line records",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "$ref": "purchase_order.json#/PurchaseOrder"
+        }
+      },
+      "totalRecords": {
+        "description": "The number of objects contained in this collection",
+        "type": "integer"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "purchaseOrders",
+      "totalRecords"
+    ]
+  }
+}

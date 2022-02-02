@@ -25,7 +25,6 @@
       },
       "exportedPoLineIds": {
         "description": "References the purchase order lines associated to the export",
-        "id": "exportedPoLineIds",
         "type": "array",
         "items": {
           "description": "UUID of the purchase order line",

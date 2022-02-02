@@ -54,7 +54,6 @@
       },
       "serverAddress": {
         "description": "The server address for this EDI",
-        "pattern": "^$|(([Hh][Tt][Tt][Pp]|[Ff][Tt][Pp])([Ss])?://.+$)",
         "type": "string"
       },
       "username": {

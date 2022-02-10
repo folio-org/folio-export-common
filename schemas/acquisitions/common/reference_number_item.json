@@ -12,19 +12,19 @@
         "description": "the reference number type",
         "type": "string",
         "enum": [
-          "CONTINUATION_REF_NUMBER",
-          "ORDER_REF_NUMBER",
-          "SUBSCRIPTION_REF_NUMBER",
-          "INTERNAL_NUMBER",
-          "TITLE_NUMBER"
+          "Vendor continuation reference number",
+          "Vendor order reference number",
+          "Vendor subscription reference number",
+          "Vendor internal number",
+          "Vendor title number"
         ]
       },
       "vendorDetailsSource": {
         "description": "the reference number type",
         "type": "string",
         "enum": [
-          "ORDER_LINE",
-          "INVOICE_LINE"
+          "OrderLine",
+          "InvoiceLine"
         ]
       }
     },

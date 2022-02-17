@@ -45,6 +45,13 @@
           "type": "string"
         }
       },
+      "fileNames": {
+        "description": "Exported files",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
       "startTime": {
         "description": "Job start timestamp",
         "type": "string",

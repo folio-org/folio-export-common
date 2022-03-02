@@ -4,7 +4,8 @@
   "EntityType": {
     "type": "string",
     "enum": [
-      "USER"
+      "USER",
+      "ITEM"
     ]
   }
 }

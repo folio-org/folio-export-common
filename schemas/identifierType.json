@@ -5,7 +5,11 @@
     "type": "string",
     "enum": [
       "ID",
-      "BARCODE"
+      "BARCODE",
+      "HRID",
+      "FORMER_IDS",
+      "ACCESSION_NUMBER",
+      "HOLDINGS_RECORD_ID"
     ]
   }
 }

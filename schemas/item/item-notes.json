@@ -3,7 +3,6 @@
   "description": "Note for item record",
   "ItemNotes": {
     "type": "object",
-    "javaType": "org.folio.rest.jaxrs.model.ItemNotes",
     "additionalProperties": false,
     "properties": {
       "itemNoteTypeId": {

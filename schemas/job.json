@@ -77,11 +77,11 @@
       },
       "identifierType": {
         "description": "Identifier type",
-        "$ref": "identifierType.json#/IdentifierType"
+        "$ref": "bulk-edit/identifierType.json#/IdentifierType"
       },
       "entityType": {
         "description": "Entity type",
-        "$ref": "entityType.json#/EntityType"
+        "$ref": "bulk-edit/entityType.json#/EntityType"
       },
       "progress": {
         "description": "Progress for records being processed",

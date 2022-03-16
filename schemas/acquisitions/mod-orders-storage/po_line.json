@@ -233,7 +233,7 @@
       "tags": {
         "description": "arbitrary tags associated with this purchase order line",
         "type": "object",
-        "$ref": "../../user/tags.json#/Tags"
+        "$ref": "../../common/tags.json#/Tags"
       },
       "titleOrPackage": {
         "description": "title of the material",

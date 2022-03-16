@@ -4,12 +4,12 @@
   "IdentifierType": {
     "type": "string",
     "enum": [
-      "ID",
-      "BARCODE",
-      "HRID",
-      "FORMER_IDS",
-      "ACCESSION_NUMBER",
-      "HOLDINGS_RECORD_ID"
+      "id",
+      "barcode",
+      "hrid",
+      "formerIds",
+      "accessionNumber",
+      "holdingsRecordId"
     ]
   }
 }

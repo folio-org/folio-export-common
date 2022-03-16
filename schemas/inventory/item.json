@@ -154,7 +154,7 @@
         }
       },
       "status": {
-        "$ref": "status.json#/Status"
+        "$ref": "inventoryItemStatus.json#/InventoryItemStatus"
       },
       "materialType": {
         "$ref": "materialType.json#/MaterialType"

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Note for item record",
-  "ItemNotes": {
+  "ItemNote": {
     "type": "object",
     "additionalProperties": false,
     "properties": {

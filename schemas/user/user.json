@@ -80,7 +80,7 @@
         "$ref": "../common/metadata.json#/Metadata"
       },
       "tags": {
-        "$ref": "tags.json#/Tags"
+        "$ref": "../common/tags.json#/Tags"
       },
       "customFields": {
         "description": "Object that contains custom field",

@@ -146,7 +146,7 @@
       "tags": {
         "type": "object",
         "description": "arbitrary tags associated with this purchase order",
-        "$ref": "../../user/tags.json#/Tags"
+        "$ref": "../../common/tags.json#/Tags"
       },
       "metadata": {
         "type": "object",

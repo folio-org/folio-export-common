@@ -71,6 +71,12 @@
         "type": "boolean",
         "default": false
       }
-    }
+    },
+    "required": [
+      "libEdiCode",
+      "libEdiType",
+      "vendorEdiCode",
+      "vendorEdiType"
+    ]
   }
 }

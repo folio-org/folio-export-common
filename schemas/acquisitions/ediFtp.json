@@ -60,6 +60,10 @@
         "description": "The login username for this EDI",
         "type": "string"
       }
-    }
+    },
+    "required": [
+      "serverAddress",
+      "ftpPort"
+    ]
   }
 }

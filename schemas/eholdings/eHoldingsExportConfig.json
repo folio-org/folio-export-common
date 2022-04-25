@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The schema describes an export parameters for the eHoldings application",
+  "EHoldingsExportConfig": {
+    "type": "object",
+    "properties": {
+      "packageSearchQuery": {
+        "description": "The cql query needed to search the exporting package",
+        "type": "string"
+      },
+      "titleSearchQuery": {
+        "description": "The cql query needed to search an attached titles to the package",
+        "type": "string"
+      },
+      "packageFields": {
+        "description": "The list of package fields for export",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "titleFields": {
+        "description": "The list of title fields for export",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -12,7 +12,8 @@
       "INVOICE_EXPORT",
       "BULK_EDIT_IDENTIFIERS",
       "BULK_EDIT_QUERY",
-      "BULK_EDIT_UPDATE"
+      "BULK_EDIT_UPDATE",
+      "E_HOLDINGS"
     ],
     "default": "BURSAR_FEES_FINES"
   }

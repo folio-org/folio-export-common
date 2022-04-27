@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The schema describes an export parameters for the eHoldings application",
+  "EHoldingsTitle": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "The cql query needed to search the exporting package",
+        "type": "string"
+      },
+      "name": {
+        "description": "The cql query needed to search an attached titles to the package",
+        "type": "string"
+      }
+    }
+  }
+}

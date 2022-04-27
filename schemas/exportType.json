@@ -13,7 +13,7 @@
       "BULK_EDIT_IDENTIFIERS",
       "BULK_EDIT_QUERY",
       "BULK_EDIT_UPDATE",
-      "EHOLDINGS"
+      "E_HOLDINGS"
     ],
     "default": "BURSAR_FEES_FINES"
   }

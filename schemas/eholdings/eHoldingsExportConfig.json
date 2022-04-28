@@ -4,12 +4,9 @@
   "EHoldingsExportConfig": {
     "type": "object",
     "properties": {
-      "packageSearchQuery": {
-        "description": "The cql query needed to search the exporting package",
-        "type": "string"
-      },
-      "titleSearchQuery": {
-        "description": "The cql query needed to search an attached titles to the package",
+      "packageId": {
+        "description": "Unique identifier of package - combination of providerId-packageId",
+        "example": "91525-1152699",
         "type": "string"
       },
       "packageFields": {

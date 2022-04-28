@@ -4,17 +4,19 @@
   "EHoldingsExportConfig": {
     "type": "object",
     "properties": {
-      "packageId": {
+      "recordId": {
         "description": "Unique identifier of package - combination of providerId-packageId",
-        "example": "91525-1152699",
+        "example": "91525-1152699-659590",
         "type": "string"
       },
-      "packageSearchFilters": {
+      "recordType": {
+        "type": "string",
+        "description": "The record type",
+        "enum": ["PACKAGE", "RESOURCE"]
+      },
+      "searchFilters": {
         "description": "The filters needed to search the exporting package",
-        "type": "string"
-      },
-      "titleSearchFilters": {
-        "description": "The filters needed to search an attached titles to the package",
+        "example": "filter[name]=\"title\"&sort=\"name\"",
         "type": "string"
       },
       "packageFields": {
@@ -33,7 +35,8 @@
       }
     },
     "required": [
-      "packageId"
+      "recordId",
+      "recordType"
     ]
   }
 }

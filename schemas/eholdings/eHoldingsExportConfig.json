@@ -5,7 +5,8 @@
     "type": "object",
     "properties": {
       "packageId": {
-        "description": "The cql query needed to search the exporting package",
+        "description": "Unique identifier of package - combination of providerId-packageId",
+        "example": "91525-1152699",
         "type": "string"
       },
       "packageFields": {

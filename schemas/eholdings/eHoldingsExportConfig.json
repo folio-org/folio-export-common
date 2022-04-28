@@ -14,9 +14,9 @@
         "description": "The record type",
         "enum": ["PACKAGE", "RESOURCE"]
       },
-      "searchFilters": {
-        "description": "The filters needed to search the exporting package",
-        "example": "filter[name]=\"title\"&sort=\"name\"",
+      "searchTitleFilters": {
+        "description": "The filters needed to filter package titles",
+        "example": "filter[name]=title&sort=name",
         "type": "string"
       },
       "packageFields": {

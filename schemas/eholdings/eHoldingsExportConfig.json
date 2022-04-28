@@ -9,6 +9,14 @@
         "example": "91525-1152699",
         "type": "string"
       },
+      "packageSearchFilters": {
+        "description": "The filters needed to search the exporting package",
+        "type": "string"
+      },
+      "titleSearchFilters": {
+        "description": "The filters needed to search an attached titles to the package",
+        "type": "string"
+      },
       "packageFields": {
         "description": "The list of package fields for export",
         "type": "array",
@@ -23,6 +31,9 @@
           "type": "string"
         }
       }
-    }
+    },
+    "required": [
+      "packageId"
+    ]
   }
 }

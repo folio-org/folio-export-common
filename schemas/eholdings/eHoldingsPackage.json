@@ -5,11 +5,11 @@
     "type": "object",
     "properties": {
       "id": {
-        "description": "The cql query needed to search the exporting package",
+        "description": "Unique identifier of package",
         "type": "string"
       },
       "name": {
-        "description": "The cql query needed to search an attached titles to the package",
+        "description": "TPackage name",
         "type": "string"
       }
     }

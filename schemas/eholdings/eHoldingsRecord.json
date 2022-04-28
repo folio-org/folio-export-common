@@ -12,7 +12,7 @@
       "titles": {
         "type": "array",
         "description": "Titles related exported package",
-        "title": {
+        "items": {
           "type": "object",
           "description": "Title to export",
           "$ref": "eHoldingsTitle.json#/EHoldingsTitle"

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Package relationships object schema in package collection item",
   "description": "Package relationships object schema in package collection item",
-  "PackageRelationship": {
+  "PackageRelationships": {
     "type": "object",
     "properties": {
       "resources": {

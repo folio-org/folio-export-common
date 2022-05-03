@@ -2,7 +2,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Embargo Period Schema",
   "description": "Embargo Period Schema",
-  "javaType": "org.folio.rest.jaxrs.model.EmbargoPeriod",
   "EmbargoPeriod": {
     "type": "object",
     "properties": {

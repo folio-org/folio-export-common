@@ -22,7 +22,7 @@
       "relationships": {
         "type": "object",
         "description": "Displays if any resources are included in relationships",
-        "$ref": "packageRelationship.json#/PackageRelationship"
+        "$ref": "packageRelationships.json#/PackageRelationships"
       }
     },
     "required": [

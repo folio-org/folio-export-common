@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Metadata of relationships for a given object",
   "description": "Metadata of relationships for a given object",
-  "TitleRelationship": {
+  "TitleRelationships": {
     "type": "object",
     "properties": {
       "packages": {

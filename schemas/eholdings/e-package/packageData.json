@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Package object schema for a collection",
+  "PackageData": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier of package - combination of providerId-packageId",
+        "example": "91525-1152699"
+      },
+      "type": {
+        "type": "string",
+        "description": "Type of resource",
+        "example": "packages"
+      },
+      "attributes": {
+        "type": "object",
+        "description": "Package object data attributes",
+        "$ref": "packageAttributes.json#/PackageAttributes"
+      }
+    },
+    "required": [
+      "id",
+      "attributes"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The Title Data Schema",
+  "TitleData": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "The Id Schema",
+        "example": "100130"
+      },
+      "type": {
+        "type": "string",
+        "description": "Title Type",
+        "example": "titles"
+      },
+      "attributes": {
+        "type": "object",
+        "description": "The Attributes Schema",
+        "$ref": "titleAttributes.json#/TitleAttributes"
+      }
+    },
+    "required": [
+      "id",
+      "attributes"
+    ]
+  }
+}

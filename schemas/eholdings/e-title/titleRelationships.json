@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Metadata of relationships for a given object",
+  "description": "Metadata of relationships for a given object",
+  "TitleRelationship": {
+    "type": "object",
+    "properties": {
+      "packages": {
+        "type": "object",
+        "description": "Relationship of packages for a given object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "description": "packages Data Information",
+            "items": {
+              "type": "object",
+              "description": "Resources Data",
+              "$ref": "../relationship/relationshipData.json#/RelationshipData"
+            }
+          },
+          "meta": {
+            "type": "object",
+            "description": "Meta information",
+            "$ref": "../relationship/included.json#/MetaDataIncluded"
+          }
+        }
+      },
+      "resources": {
+        "type": "object",
+        "description": "Relationship of resources for a given object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "description": "Resources Data Information",
+            "items": {
+              "type": "object",
+              "description": "Resources Data",
+              "$ref": "../relationship/relationshipData.json#/RelationshipData"
+            }
+          },
+          "meta": {
+            "type": "object",
+            "description": "Meta information",
+            "$ref": "../relationship/included.json#/MetaDataIncluded"
+          }
+        }
+      },
+      "provider": {
+        "type": "object",
+        "description": "Relationship of provider for a given object",
+        "$ref": "../relationship/metaIncluded.json#/MetaIncluded"
+      }
+    }
+  }
+}

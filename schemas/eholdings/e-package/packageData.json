@@ -18,6 +18,11 @@
         "type": "object",
         "description": "Package object data attributes",
         "$ref": "packageAttributes.json#/PackageAttributes"
+      },
+      "relationships": {
+        "type": "object",
+        "description": "Displays if any resources are included in relationships",
+        "$ref": "packageRelationship.json#/PackageRelationship"
       }
     },
     "required": [

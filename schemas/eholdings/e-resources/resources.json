@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Resource Collection Schema",
+  "description": "Resource Collection Schema",
+  "EResources": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "array",
+        "description": "List of resources",
+        "items": {
+          "type": "object",
+          "$ref": "resourcesData.json#/ResourcesData"
+        }
+      }
+    },
+    "required": [
+      "data",
+      "jsonapi"
+    ]
+  }
+}

@@ -13,7 +13,7 @@
       "meta": {
         "type": "object",
         "description": "Meta information",
-        "$ref": "included.json"
+        "$ref": "../relationship/included.json#/MetaDataIncluded"
       }
     }
   }

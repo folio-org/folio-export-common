@@ -30,7 +30,6 @@
       },
       "isTitleCustom": {
         "type": "boolean",
-        "readonly": true,
         "description": "Defines if title is custom",
         "example": false
       },
@@ -41,7 +40,6 @@
       },
       "titleId": {
         "type": "integer",
-        "readonly": true,
         "description": "Title Id",
         "example": 2985519
       },
@@ -75,7 +73,6 @@
       },
       "subjects": {
         "type": "array",
-        "readonly": true,
         "description": "List of subjects for a given resource",
         "items": {
           "type": "object",
@@ -94,7 +91,6 @@
       },
       "isPackageCustom": {
         "type": "boolean",
-        "readonly": true,
         "description": "Defines if package is custom",
         "example": false
       },
@@ -110,31 +106,26 @@
       },
       "isTokenNeeded": {
         "type": "boolean",
-        "readonly": true,
         "description": "Defines if token is needed",
         "example": false
       },
       "locationId": {
         "type": "integer",
-        "readonly": true,
         "description": "Unique location id",
         "example": 9091063
       },
       "managedEmbargoPeriod": {
         "type": "object",
-        "readonly": true,
         "description": "Managed Embargo Period information",
         "$ref": "../embargo.json#/EmbargoPeriod"
       },
       "packageId": {
         "type": "string",
-        "readonly": true,
         "description": "Unique package id",
         "example": "19-2333046"
       },
       "packageName": {
         "type": "string",
-        "readonly": true,
         "description": "Package name",
         "example": "Applied Science & Technology Source Ultimate"
       },
@@ -145,13 +136,11 @@
       },
       "providerId": {
         "type": "integer",
-        "readonly": true,
         "description": "Provider Id",
         "example": 19
       },
       "providerName": {
         "type": "string",
-        "readonly": true,
         "description": "Provider name",
         "example": "EBSCO"
       },
@@ -162,7 +151,6 @@
       },
       "managedCoverages": {
         "type": "array",
-        "readonly": true,
         "description": "List of Managed Coverages information",
         "items": {
           "type": "object",

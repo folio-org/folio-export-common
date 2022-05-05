@@ -11,7 +11,7 @@
         "items": {
           "type": "object",
           "description": "Alternate Title Schema",
-          "$ref": "../e-title/alternateTitle.json#/AlternateTitle"
+          "$ref": "../alternateTitle.json#/AlternateTitle"
         }
       },
       "description": {

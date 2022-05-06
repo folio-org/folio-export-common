@@ -9,6 +9,13 @@
         "type": "object",
         "description": "List of resources",
         "$ref": "resourcesData.json#/ResourcesData"
+      },
+      "included": {
+        "type": "array",
+        "description": "List of included items",
+        "items": {
+          "type": "object"
+        }
       }
     },
     "required": [

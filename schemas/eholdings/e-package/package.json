@@ -8,6 +8,13 @@
         "type": "object",
         "description": "The Data Schema",
         "$ref": "packageData.json#/PackageData"
+      },
+      "included": {
+        "type": "array",
+        "description": "List of included items",
+        "items": {
+          "type": "object"
+        }
       }
     },
     "required": [

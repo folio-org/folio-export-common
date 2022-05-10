@@ -1,23 +1,23 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Package object schema for a collection",
-  "PackageData": {
+  "description": "Access Type object schema",
+  "AccessTypeData": {
     "type": "object",
     "properties": {
       "id": {
         "type": "string",
-        "description": "Unique identifier of package - combination of providerId-packageId",
-        "example": "91525-1152699"
+        "description": "UUID of access type",
+        "example": "f973c3b6-85fc-4d35-bda8-f31b568957bf"
       },
       "type": {
         "type": "string",
         "description": "Type of resource",
-        "example": "packages"
+        "example": "accessTypes"
       },
       "attributes": {
         "type": "object",
-        "description": "Package object data attributes",
-        "$ref": "packageAttributes.json#/PackageAttributes"
+        "description": "Access type data attributes",
+        "$ref": "accessTypeAttributes.json#/AccessTypeAttributes"
       }
     },
     "required": [

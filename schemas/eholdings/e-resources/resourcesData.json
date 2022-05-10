@@ -21,10 +21,12 @@
         "description": "Resource object data attributes",
         "$ref": "resourcesAttributes.json#/ResourcesAttributes"
       },
-      "relationships": {
-        "type": "object",
-        "description": "Displays if any relationship is included",
-        "$ref": "resourcesRelationships.json#/ResourcesRelationships"
+      "included": {
+        "type": "array",
+        "description": "List of included items",
+        "items": {
+          "type": "object"
+        }
       }
     }
   }

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "metadata containing total results in resources collection",
+  "title": "Metadata total results Schema",
+  "MetaTotalResults": {
+    "type": "object",
+    "properties": {
+      "totalResults": {
+        "type": "integer",
+        "description": "Total number of results",
+        "example": 2
+      }
+    },
+    "required": [
+      "totalResults"
+    ]
+  }
+}

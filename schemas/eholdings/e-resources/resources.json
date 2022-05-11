@@ -12,6 +12,10 @@
           "type": "object",
           "$ref": "resourcesData.json#/ResourcesData"
         }
+      },
+      "meta": {
+        "type": "object",
+        "$ref": "metaTotalResults.json#/MetaTotalResults"
       }
     },
     "required": [

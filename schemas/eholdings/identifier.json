@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Identifier object schema",
+  "description": "Identifier object schema",
+  "Identifier": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Identifier Value",
+        "example": "100130"
+      },
+      "subtype": {
+        "type": "string",
+        "description": "Subtype for the identifier. Valid values are  Print, Online.",
+        "enum": [
+          "Print",
+          "Online"
+        ],
+        "example": "Print"
+      },
+      "type": {
+        "type": "string",
+        "description": "Type of identifier. Valid values are ISSN, ISBN.",
+        "enum": [
+          "ISSN",
+          "ISBN"
+        ],
+        "example": "ISSN"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Resource Collection Schema",
+  "description": "Resource Collection Schema",
+  "EResource": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "object",
+        "description": "List of resources",
+        "$ref": "resourcesData.json#/ResourcesData"
+      },
+      "included": {
+        "type": "array",
+        "description": "List of included items",
+        "items": {
+          "type": "object"
+        }
+      }
+    },
+    "required": [
+      "data"
+    ]
+  }
+}

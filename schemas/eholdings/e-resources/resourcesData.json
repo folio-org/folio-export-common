@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Resource object schema for a collection",
+  "description": "Resource object schema for a collection",
+  "ResourcesData": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier of resource - combination of providerId-packageId-titleId",
+        "example": "583-4345-760027"
+      },
+      "type": {
+        "type": "string",
+        "description": "Type of resource",
+        "enum": ["resources"],
+        "example": "resources"
+      },
+      "attributes": {
+        "type": "object",
+        "description": "Resource object data attributes",
+        "$ref": "resourcesAttributes.json#/ResourcesAttributes"
+      },
+      "included": {
+        "type": "array",
+        "description": "List of included items",
+        "items": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

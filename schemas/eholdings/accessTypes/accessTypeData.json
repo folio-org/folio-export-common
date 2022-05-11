@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Access Type object schema",
+  "AccessTypeData": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "UUID of access type",
+        "example": "f973c3b6-85fc-4d35-bda8-f31b568957bf"
+      },
+      "type": {
+        "type": "string",
+        "description": "Type of resource",
+        "example": "accessTypes"
+      },
+      "attributes": {
+        "type": "object",
+        "description": "Access type data attributes",
+        "$ref": "accessTypeAttributes.json#/AccessTypeAttributes"
+      }
+    },
+    "required": [
+      "id",
+      "attributes"
+    ]
+  }
+}

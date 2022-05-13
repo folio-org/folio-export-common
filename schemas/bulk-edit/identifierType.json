@@ -9,7 +9,9 @@
       "HRID",
       "FORMER_IDS",
       "ACCESSION_NUMBER",
-      "HOLDINGS_RECORD_ID"
+      "HOLDINGS_RECORD_ID",
+      "USER_NAME",
+      "EXTERNAL_SYSTEM_ID"
     ]
   }
 }

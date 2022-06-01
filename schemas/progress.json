@@ -22,6 +22,20 @@
         "maximum": 100,
         "default": 0,
         "description": "Current progress in %"
+      },
+      "success": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 0,
+        "default": 0,
+        "description": "Current number of success processed records"
+      },
+      "errors": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 0,
+        "default": 0,
+        "description": "Current number of errors"
       }
     }
   }

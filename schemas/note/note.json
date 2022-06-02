@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Note Schema",
+  "description": "Note Schema",
+  "Note": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique generated identifier for the note"
+      },
+      "typeId": {
+        "type": "string",
+        "description": "Type id of note"
+      },
+      "type": {
+        "type": "string",
+        "description": "Type of note"
+      },
+      "title": {
+        "type": "string",
+        "description": "Note title"
+      },
+      "domain": {
+        "type": "string",
+        "description": "Domain associated with this note"
+      },
+      "content": {
+        "type": "string",
+        "description": "Content of the note"
+      },
+      "popUpOnCheckOut": {
+        "type": "boolean",
+        "description": "Flag that specify need of pop-up on check-out app"
+      },
+      "popUpOnUser": {
+        "type": "boolean",
+        "description": "Flag that specify need of pop-up on users app"
+      },
+      "metadata": {
+        "$ref": "../common/metadata.json#/Metadata"
+      }
+    }
+  }
+}

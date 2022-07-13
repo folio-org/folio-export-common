@@ -1,18 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A collection of content updates",
-  "ContentUpdateCollection": {
+  "description": "A collection of item content updates",
+  "ItemContentUpdateCollection": {
     "type": "object",
     "properties": {
-      "entityType": {
-        "description": "Entity type",
-        "$ref": "entityType.json#/EntityType"
-      },
       "contentUpdates": {
-        "description": "List of content updates",
+        "description": "List of item content updates",
         "type": "array",
         "items": {
-          "$ref": "contentUpdate.json#/ContentUpdate"
+          "$ref": "itemContentUpdate.json#/ItemContentUpdate"
         },
         "minItems": 1
       },
@@ -21,7 +17,6 @@
       }
     },
     "required": [
-      "entityType",
       "contentUpdates",
       "totalRecords"
     ],

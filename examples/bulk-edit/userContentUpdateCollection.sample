@@ -1,0 +1,19 @@
+{
+  "contentUpdates": [
+    {
+      "option": "EXPIRATION_DATE",
+      "action": "CLEAR_FIELD"
+    },
+    {
+      "option": "EMAIL_ADDRESS",
+      "action": "FIND",
+      "value": "domain.com"
+    },
+    {
+      "option": "EMAIL_ADDRESS",
+      "action": "REPLACE_WITH",
+      "value": "newdomain.com"
+    }
+  ],
+  "totalRecords": 3
+}

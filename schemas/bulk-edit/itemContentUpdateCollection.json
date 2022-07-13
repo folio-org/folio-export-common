@@ -4,7 +4,7 @@
   "ItemContentUpdateCollection": {
     "type": "object",
     "properties": {
-      "contentUpdates": {
+      "itemContentUpdates": {
         "description": "List of item content updates",
         "type": "array",
         "items": {

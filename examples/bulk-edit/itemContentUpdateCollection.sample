@@ -1,5 +1,5 @@
 {
-  "contentUpdates": [
+  "itemContentUpdates": [
     {
       "option": "TEMPORARY_LOCATION",
       "action": "CLEAR_FIELD"

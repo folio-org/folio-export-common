@@ -17,7 +17,7 @@
       }
     },
     "required": [
-      "contentUpdates",
+      "itemContentUpdates",
       "totalRecords"
     ],
     "additionalProperties": false

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Content update",
-  "ContentUpdate": {
+  "description": "Item content update",
+  "ItemContentUpdate": {
     "type": "object",
     "properties": {
       "option": {

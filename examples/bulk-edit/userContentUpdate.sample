@@ -1,0 +1,6 @@
+{
+  "option": "EXPIRATION_DATE",
+  "actions": {
+    "name": "CLEAR_FIELD"
+  }
+}

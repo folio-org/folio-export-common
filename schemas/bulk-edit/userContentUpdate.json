@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "User content update",
+  "UserContentUpdate": {
+    "type": "object",
+    "properties": {
+      "option": {
+        "description": "Option to change",
+        "type": "string",
+        "enum": [
+          "PATRON_GROUP",
+          "EXPIRATION_DATE",
+          "EMAIL_ADDRESS"
+        ]
+      },
+      "actions": {
+        "type": "array",
+        "items": {
+          "description": "Changing action",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Action name",
+              "type": "string",
+              "enum": [
+                "FIND",
+                "ADD_TO_EXISTING",
+                "CLEAR_FIELD",
+                "REPLACE_WITH",
+                "FIND_AND_REMOVE_THESE"
+              ]
+            },
+            "value": {
+              "description": "Action value",
+              "type": "object"
+            }
+          },
+          "required": [
+            "name"
+          ]
+        },
+        "minItems": 1
+      }
+    },
+    "required": [
+      "option",
+      "actions"
+    ],
+    "additionalProperties": false
+  }
+}

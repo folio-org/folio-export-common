@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of user content updates",
+  "UserContentUpdateCollection": {
+    "type": "object",
+    "properties": {
+      "userContentUpdates": {
+        "description": "List of user content updates",
+        "type": "array",
+        "items": {
+          "$ref": "userContentUpdate.json#/UserContentUpdate"
+        },
+        "minItems": 1
+      },
+      "totalRecords": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "userContentUpdates",
+      "totalRecords"
+    ],
+    "additionalProperties": false
+  }
+}

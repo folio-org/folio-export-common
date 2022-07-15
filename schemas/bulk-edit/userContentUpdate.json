@@ -13,25 +13,38 @@
           "EMAIL_ADDRESS"
         ]
       },
-      "action": {
-        "description": "Changing action",
-        "type": "string",
-        "enum": [
-          "FIND",
-          "ADD_TO_EXISTING",
-          "CLEAR_FIELD",
-          "REPLACE_WITH",
-          "FIND_AND_REMOVE_THESE"
-        ]
-      },
-      "value": {
-        "description": "Update value",
-        "type": "object"
+      "actions": {
+        "type": "array",
+        "items": {
+          "description": "Changing action",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Action name",
+              "type": "string",
+              "enum": [
+                "FIND",
+                "ADD_TO_EXISTING",
+                "CLEAR_FIELD",
+                "REPLACE_WITH",
+                "FIND_AND_REMOVE_THESE"
+              ]
+            },
+            "value": {
+              "description": "Action value",
+              "type": "object"
+            }
+          },
+          "required": [
+            "name"
+          ]
+        },
+        "minItems": 1
       }
     },
     "required": [
       "option",
-      "action"
+      "actions"
     ],
     "additionalProperties": false
   }

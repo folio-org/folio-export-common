@@ -2,18 +2,25 @@
   "userContentUpdates": [
     {
       "option": "EXPIRATION_DATE",
-      "action": "CLEAR_FIELD"
+      "actions": [
+        {
+          "name": "CLEAR_FIELD"
+        }
+      ]
     },
     {
       "option": "EMAIL_ADDRESS",
-      "action": "FIND",
-      "value": "domain.com"
-    },
-    {
-      "option": "EMAIL_ADDRESS",
-      "action": "REPLACE_WITH",
-      "value": "newdomain.com"
+      "actions": [
+        {
+          "name": "FIND",
+          "value": "domain.com"
+        },
+        {
+          "name": "REPLACE_WITH",
+          "value": "newdomain.com"
+        }
+      ]
     }
   ],
-  "totalRecords": 3
+  "totalRecords": 2
 }

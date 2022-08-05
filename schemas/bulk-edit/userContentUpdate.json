@@ -16,28 +16,7 @@
       "actions": {
         "type": "array",
         "items": {
-          "description": "Changing action",
-          "type": "object",
-          "properties": {
-            "name": {
-              "description": "Action name",
-              "type": "string",
-              "enum": [
-                "FIND",
-                "ADD_TO_EXISTING",
-                "CLEAR_FIELD",
-                "REPLACE_WITH",
-                "FIND_AND_REMOVE_THESE"
-              ]
-            },
-            "value": {
-              "description": "Action value",
-              "type": "object"
-            }
-          },
-          "required": [
-            "name"
-          ]
+          "$ref": "userContentUpdateAction.json#/UserContentUpdateAction"
         },
         "minItems": 1
       }

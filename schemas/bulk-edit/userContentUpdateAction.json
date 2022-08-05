@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "User content update",
+  "UserContentUpdateAction": {
+    "description": "User Changing action",
+    "type": "object",
+    "properties": {
+      "name": {
+        "description": "Action name",
+        "type": "string",
+        "enum": [
+          "FIND",
+          "ADD_TO_EXISTING",
+          "CLEAR_FIELD",
+          "REPLACE_WITH",
+          "FIND_AND_REMOVE_THESE"
+        ]
+      },
+      "value": {
+        "description": "Action value",
+        "type": "object"
+      }
+    },
+    "required": [
+      "name"
+    ],
+    "additionalProperties": false
+  }
+}

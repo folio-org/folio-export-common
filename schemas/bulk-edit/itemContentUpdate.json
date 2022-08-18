@@ -10,6 +10,8 @@
         "enum": [
           "PERMANENT_LOCATION",
           "TEMPORARY_LOCATION",
+          "PERMANENT_LOAN_TYPE",
+          "TEMPORARY_LOAN_TYPE",
           "STATUS"
         ]
       },

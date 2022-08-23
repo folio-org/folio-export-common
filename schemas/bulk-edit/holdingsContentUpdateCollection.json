@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of holdings records content updates",
+  "HoldingsContentUpdateCollection": {
+    "type": "object",
+    "properties": {
+      "holdingsContentUpdates": {
+        "description": "List of item content updates",
+        "type": "array",
+        "items": {
+          "$ref": "holdingsContentUpdate.json#/HoldingsContentUpdate"
+        },
+        "minItems": 1
+      },
+      "totalRecords": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "holdingsContentUpdates",
+      "totalRecords"
+    ],
+    "additionalProperties": false
+  }
+}

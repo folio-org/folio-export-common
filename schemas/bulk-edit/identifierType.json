@@ -11,7 +11,8 @@
       "ACCESSION_NUMBER",
       "HOLDINGS_RECORD_ID",
       "USER_NAME",
-      "EXTERNAL_SYSTEM_ID"
+      "EXTERNAL_SYSTEM_ID",
+      "INSTANCE_HRID"
     ]
   }
 }

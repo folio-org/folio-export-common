@@ -1,0 +1,14 @@
+{
+  "holdingsContentUpdates": [
+    {
+      "option": "TEMPORARY_LOCATION",
+      "action": "CLEAR_FIELD"
+    },
+    {
+      "option": "PERMANENT_LOCATION",
+      "action": "REPLACE_WITH",
+      "value": "Main Library"
+    }
+  ],
+  "totalRecords": 2
+}

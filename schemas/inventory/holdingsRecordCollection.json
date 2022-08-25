@@ -4,7 +4,7 @@
   "HoldingsRecordCollection": {
     "type": "object",
     "properties": {
-      "items": {
+      "holdingsRecords": {
         "description": "List of holdings records",
         "type": "array",
         "items": {

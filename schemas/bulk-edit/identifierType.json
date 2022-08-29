@@ -12,7 +12,8 @@
       "HOLDINGS_RECORD_ID",
       "USER_NAME",
       "EXTERNAL_SYSTEM_ID",
-      "INSTANCE_HRID"
+      "INSTANCE_HRID",
+      "ITEM_BARCODE"
     ]
   }
 }

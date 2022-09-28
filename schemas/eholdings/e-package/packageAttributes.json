@@ -41,7 +41,7 @@
         "example": "Complete"
       },
       "providerId": {
-        "type": "integer",
+        "type": "string",
         "description": "Provider Id",
         "example": 91525
       },

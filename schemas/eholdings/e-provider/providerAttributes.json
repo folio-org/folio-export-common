@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Provider Data Attributes Schema",
+  "ProviderAttributes": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Provider name",
+        "example": "Gale | Cengage"
+      },
+      "packagesTotal": {
+        "type": "integer",
+        "description": "total number of packages",
+        "example": 243
+      },
+      "packagesSelected": {
+        "type": "integer",
+        "description": "packages selected",
+        "example": 18
+      },
+      "providerToken": {
+        "type": "object",
+        "description": "Package Token",
+        "$ref": "../token.json#/Token"
+      },
+      "supportsCustomPackages": {
+        "type": "boolean",
+        "description": "Whether this provider supports custom packages",
+        "example": false
+      },
+      "proxy": {
+        "type": "object",
+        "description": "Proxy",
+        "$ref": "../proxy.json#/Proxy"
+      },
+      "tags": {
+        "type": "object",
+        "description": "Package tags",
+        "$ref": "../tags.json#/Tags"
+      }
+    }
+  }
+}

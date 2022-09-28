@@ -1,6 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Package Object Data Attributes Schema",
   "description": "Package Object Data Attributes Schema",
   "PackageAttributes": {
     "type": "object",

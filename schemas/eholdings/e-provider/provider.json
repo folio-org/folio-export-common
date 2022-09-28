@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Provider object schema",
+  "EProvider": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "object",
+        "description": "Provider Data",
+        "$ref": "providerData.json#/ProviderData"
+      },
+      "included": {
+        "type": "array",
+        "description": "List of packages for a given provider",
+        "items": {
+          "type": "object"
+        }
+      }
+    },
+    "required": [
+      "data"
+    ]
+  }
+}

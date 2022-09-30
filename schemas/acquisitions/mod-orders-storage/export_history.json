@@ -18,6 +18,23 @@
         "description": "Export type",
         "type": "string"
       },
+      "exportMethod": {
+        "description": "Export method name",
+        "type": "string"
+      },
+      "exportFileName": {
+        "description": "Export file name",
+        "type": "string"
+      },
+      "vendorId": {
+        "description": "UUID of vendor",
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      },
+      "vendorName": {
+        "description": "Vendor name",
+        "type": "string"
+      },
       "exportDate": {
         "description": "Export date",
         "type": "string",

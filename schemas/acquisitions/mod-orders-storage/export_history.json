@@ -22,6 +22,10 @@
         "description": "Job status",
         "type": "string"
       },
+      "jobName": {
+        "description": "Job name",
+        "type": "string"
+      },
       "exportMethod": {
         "description": "Export method name",
         "type": "string"

@@ -32,7 +32,7 @@
         "example": "Shenbao"
       },
       "packageId": {
-        "type": "integer",
+        "type": "string",
         "description": "Package Id",
         "example": 1152699
       },
@@ -42,7 +42,7 @@
         "example": "Complete"
       },
       "providerId": {
-        "type": "integer",
+        "type": "string",
         "description": "Provider Id",
         "example": 91525
       },

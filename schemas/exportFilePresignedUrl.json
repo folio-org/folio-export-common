@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Presigned Url for download",
+  "PresignedUrl": {
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string",
+        "description": "Presigned Url for download"
+      }
+    },
+    "required": [
+      "url"
+    ]
+  }
+}

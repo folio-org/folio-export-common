@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The schema describes an export parameters for the Authority Control functionality",
+  "AuthorityControlExportConfig": {
+    "type": "object",
+    "properties": {
+      "fromDate": {
+        "description": "Report date range start",
+        "type": "string",
+        "format": "date"
+      },
+      "toDate": {
+        "description": "Report date range end",
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "required": [
+      "fromDate",
+      "toDate"
+    ]
+  }
+}

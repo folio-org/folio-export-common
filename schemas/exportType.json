@@ -13,7 +13,9 @@
       "BULK_EDIT_IDENTIFIERS",
       "BULK_EDIT_QUERY",
       "BULK_EDIT_UPDATE",
-      "E_HOLDINGS"
+      "E_HOLDINGS",
+      "AUTH_HEADINGS_UPDATES",
+      "FAILED_LINKED_BIB_UPDATES"
     ],
     "default": "BURSAR_FEES_FINES"
   }

@@ -47,11 +47,11 @@
       },
       "sourceFileOld": {
         "type": "string",
-        "description": "New source file ID"
+        "description": "Old source file ID"
       },
       "sourceFileNew": {
         "type": "string",
-        "description": "Old source file ID"
+        "description": "New source file ID"
       },
       "lbTotal": {
         "type": "integer",

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Collection of authority changes statistic",
+  "AuthorityChangeStatDtoCollection": {
+    "type": "object",
+    "properties": {
+      "stats": {
+        "type": "object",
+        "description": "Authority changes statistic",
+        "$ref": "authorityDataStatDto.json#/AuthorityDataStatDto"
+      },
+      "next": {
+        "type": "string",
+        "description": "Next response item date to seek by"
+      }
+    },
+    "required": [
+      "stats",
+      "next"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Meta data for authorityDataStatDto",
+  "Metadata": {
+    "type": "object",
+    "properties": {
+      "startedAt": {
+        "type": "string",
+        "description": "Date-time when authority update was registered"
+      },
+      "completedAt": {
+        "type": "string",
+        "description": "Date-time when update of all related links was completed"
+      },
+      "startedByUserId": {
+        "type": "string",
+        "description": "User's ID that triggers record"
+      },
+      "startedByUserFirstName": {
+        "type": "string",
+        "description": "User's first name that triggers record"
+      },
+      "startedByUserLastName": {
+        "type": "string",
+        "description": "User's last name that triggers record"
+      }
+    }
+  }
+}

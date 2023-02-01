@@ -19,7 +19,7 @@
         "$ref": "eholdings/eHoldingsExportConfig.json#/EHoldingsExportConfig"
       },
       "authorityControlExportConfig": {
-        "$ref": "authoritycontrol/authorityControlExportConfig.json#/AuthorityControlExportConfig"
+        "$ref": "authority-control/authorityControlExportConfig.json#/AuthorityControlExportConfig"
       }
     }
   }

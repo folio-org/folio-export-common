@@ -63,7 +63,7 @@
       },
       "lbFailed": {
         "type": "integer",
-        "description": "Amount of linked bib fields that was unsuccessfully updated during authority update"
+        "description": "Amount of linked bib fields that was failed to update during authority update"
       },
       "metadata": {
         "type": "object",

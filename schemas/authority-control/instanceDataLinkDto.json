@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Describe changes to instance that are related to links",
+  "InstanceDataLinkDto": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "link ID"
+      },
+      "instanceId": {
+        "type": "string",
+        "description": "Instance ID"
+      },
+      "authorityDataStatsId": {
+        "type": "string",
+        "description": "Stat ID"
+      },
+      "instanceHrid": {
+        "type": "string",
+        "description": "Instance hrid"
+      },
+      "instanceTitle": {
+        "type": "string",
+        "description": "Instance title"
+      },
+      "bibRecordsTags": {
+        "type": "array",
+        "description": "Related bib record tags",
+        "items": {
+          "type": "string"
+        }
+      },
+      "createdAt": {
+        "type": "string",
+        "description": "Date-time when update of all related links was created"
+      }
+    }
+  }
+}

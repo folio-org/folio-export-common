@@ -1,0 +1,12 @@
+type: array
+items:
+  oneOf:
+    - $ref: bursarExportTokenAggregate.yaml
+    - $ref: bursarExportTokenConstant.yaml
+    - $ref: bursarExportTokenDate.yaml
+    - $ref: bursarExportTokenFeeAmount.yaml
+    - $ref: bursarExportTokenFeeMetadata.yaml
+    - $ref: bursarExportTokenItemData.yaml
+    - $ref: bursarExportTokenUserData.yaml
+    - $ref: bursarExportTokenUserDataOptional.yaml
+    - $ref: bursarExportTokenConstantConditional.yaml

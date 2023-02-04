@@ -1,0 +1,12 @@
+type: object
+properties:
+  character:
+    type: string
+  length:
+    type: integer
+  direction:
+    type: string
+    enum: [FRONT, BACK]
+  truncate:
+    type: boolean
+nullable: true

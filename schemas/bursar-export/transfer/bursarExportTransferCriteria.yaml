@@ -1,0 +1,22 @@
+type: object
+properties:
+  conditions:
+    type: array
+    items:
+      type: object
+      properties:
+        condition:
+          $ref: ../filter/bursarExportFilter.yaml
+        owner:
+          type: string
+          format: uuid
+        account:
+          type: string
+          format: uuid
+  else:
+    owner:
+      type: string
+      format: uuid
+    account:
+      type: string
+      format: uuid

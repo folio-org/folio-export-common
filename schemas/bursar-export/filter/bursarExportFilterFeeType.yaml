@@ -1,0 +1,5 @@
+type: object
+properties:
+  feeFineTypeId:
+    type: string
+    format: uuid

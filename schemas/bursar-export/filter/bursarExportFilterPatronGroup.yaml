@@ -1,0 +1,5 @@
+type: object
+properties:
+  patronGroupId:
+    type: string
+    format: uuid

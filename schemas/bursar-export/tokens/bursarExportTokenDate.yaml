@@ -1,0 +1,21 @@
+type: object
+properties:
+  value:
+    type: string
+    enum:
+      - YEAR_LONG
+      - YEAR_SHORT
+      - MONTH
+      - DATE
+      - HOUR
+      - MINUTE
+      - SECOND
+      - QUARTER
+      - WEEK_OF_YEAR
+      - WEEK_OF_YEAR_ISO
+      - WEEK_YEAR
+      - WEEK_YEAR_ISO
+  timezone:
+    type: string
+  lengthControl:
+    $ref: bursarExportTokenLengthControl.yaml

@@ -1,0 +1,5 @@
+type: object
+properties:
+  locationId:
+    type: string
+    format: uuid

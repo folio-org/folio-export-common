@@ -1,0 +1,5 @@
+type: object
+properties:
+  numDays:
+    type: integer
+    minimum: 1

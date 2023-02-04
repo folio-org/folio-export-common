@@ -1,0 +1,14 @@
+type: object
+properties:
+  value:
+    type: string
+    enum:
+      - BARCODE
+      - USERNAME
+      - FIRST_NAME
+      - MIDDLE_NAME
+      - LAST_NAME
+  placeholder:
+    type: string
+  lengthControl:
+    $ref: bursarExportTokenLengthControl.yaml

@@ -1,0 +1,16 @@
+# TODO: add additionalProperties and required to filters
+# TODO: add descriptions
+type: object
+properties:
+  filter:
+    $ref: filter/bursarExportFilter.yaml
+  groupByPatron:
+    type: boolean
+  header:
+    $ref: tokens/bursarExportHeaderFooter.yaml
+  data:
+    $ref: tokens/bursarExportHeaderFeeFine.yaml
+  footer:
+    $ref: tokens/bursarExportHeaderFooter.yaml
+  transferInfo:
+    $ref: transfer/bursarExportTransferCriteria.yaml

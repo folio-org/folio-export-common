@@ -1,0 +1,5 @@
+type: object
+properties:
+  libraryId:
+    type: string
+    format: uuid

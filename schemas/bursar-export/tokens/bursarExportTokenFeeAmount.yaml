@@ -1,0 +1,6 @@
+type: object
+properties:
+  decimal:
+    type: boolean
+  lengthControl:
+    $ref: bursarExportTokenLengthControl.yaml

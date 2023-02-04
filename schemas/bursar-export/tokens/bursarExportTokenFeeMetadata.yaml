@@ -1,0 +1,7 @@
+type: object
+properties:
+  value:
+    type: string
+    enum:
+      - FEE_FINE_TYPE_ID
+      - FEE_FINE_ID

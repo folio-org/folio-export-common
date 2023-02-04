@@ -1,0 +1,12 @@
+type: object
+properties:
+  value:
+    type: string
+    enum:
+      - NUM_ROWS
+      - TOTAL_AMOUNT
+  decimal:
+    type: boolean
+    description: only applicable for total amount
+  lengthControl:
+    $ref: bursarExportTokenLengthControl.yaml

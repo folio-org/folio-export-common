@@ -1,0 +1,13 @@
+type: object
+properties:
+  conditions:
+    type: array
+    items:
+      type: object
+      properties:
+        condition:
+          $ref: ../filter/bursarExportFilter.yaml
+        value:
+          $ref: bursarExportTokenConstant.yaml
+  else:
+    $ref: bursarExportTokenConstant.yaml

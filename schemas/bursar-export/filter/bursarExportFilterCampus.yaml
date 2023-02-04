@@ -1,0 +1,5 @@
+type: object
+properties:
+  campusId:
+    type: string
+    format: uuid

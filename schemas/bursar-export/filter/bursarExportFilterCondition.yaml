@@ -1,0 +1,12 @@
+type: object
+properties:
+  operation:
+    type: string
+    enum:
+      - AND
+      - OR
+  criteria:
+    type: array
+    items:
+      $ref: bursarExportFilter.yaml
+    minItems: 1

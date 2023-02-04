@@ -2,3 +2,5 @@ type: object
 properties:
   criteria:
     $ref: bursarExportFilter.yaml
+required:
+  - criteria

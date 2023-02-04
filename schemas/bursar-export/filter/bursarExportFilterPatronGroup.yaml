@@ -3,3 +3,5 @@ properties:
   patronGroupId:
     type: string
     format: uuid
+required:
+  - patronGroupId

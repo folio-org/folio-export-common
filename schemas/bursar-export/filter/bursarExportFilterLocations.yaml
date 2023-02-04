@@ -3,3 +3,5 @@ properties:
   locationId:
     type: string
     format: uuid
+required:
+  - locationId

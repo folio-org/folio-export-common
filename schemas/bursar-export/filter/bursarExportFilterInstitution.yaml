@@ -3,3 +3,5 @@ properties:
   institutionId:
     type: string
     format: uuid
+required:
+  - institutionId

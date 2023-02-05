@@ -3,5 +3,6 @@ properties:
   libraryId:
     type: string
     format: uuid
+additionalProperties: false
 required:
   - libraryId

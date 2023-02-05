@@ -3,5 +3,6 @@ properties:
   feeFineTypeId:
     type: string
     format: uuid
+additionalProperties: false
 required:
   - feeFineTypeId

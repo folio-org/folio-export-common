@@ -3,5 +3,6 @@ properties:
   numDays:
     type: integer
     minimum: 1
+additionalProperties: false
 required:
   - numDays

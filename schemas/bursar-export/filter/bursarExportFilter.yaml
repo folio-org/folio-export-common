@@ -10,3 +10,4 @@ oneOf:
   - $ref: bursarExportFilterServicePoint.yaml
   - $ref: bursarExportFilterCondition.yaml
   - $ref: bursarExportFilterNegation.yaml
+additionalProperties: false

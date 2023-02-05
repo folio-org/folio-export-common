@@ -3,5 +3,6 @@ properties:
   servicePointId:
     type: string
     format: uuid
+additionalProperties: false
 required:
   - servicePointId

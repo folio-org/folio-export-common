@@ -10,6 +10,7 @@ properties:
     items:
       $ref: bursarExportFilter.yaml
     minItems: 1
+additionalProperties: false
 required:
   - operation
   - criteria

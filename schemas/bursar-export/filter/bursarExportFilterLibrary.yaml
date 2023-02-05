@@ -1,3 +1,4 @@
+description: Filter by library
 type: object
 properties:
   libraryId:

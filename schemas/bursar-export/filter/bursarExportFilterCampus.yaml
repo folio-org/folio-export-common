@@ -1,3 +1,4 @@
+description: Filter by campus
 type: object
 properties:
   campusId:

@@ -1,3 +1,4 @@
+description: Filter by location
 type: object
 properties:
   locationId:

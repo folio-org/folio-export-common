@@ -1,3 +1,4 @@
+description: Filter conditional operations
 type: object
 properties:
   operation:

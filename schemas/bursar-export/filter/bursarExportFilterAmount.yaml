@@ -1,3 +1,4 @@
+description: Filter by fee amount
 type: object
 properties:
   amount:

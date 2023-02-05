@@ -1,3 +1,4 @@
+description: Filter for bursar export job
 oneOf:
   - $ref: bursarExportFilterAge.yaml
   - $ref: bursarExportFilterAmount.yaml

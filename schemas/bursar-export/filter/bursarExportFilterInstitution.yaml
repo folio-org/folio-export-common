@@ -1,3 +1,4 @@
+description: Filter by institution
 type: object
 properties:
   institutionId:

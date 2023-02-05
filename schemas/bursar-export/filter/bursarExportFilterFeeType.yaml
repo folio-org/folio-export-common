@@ -1,3 +1,4 @@
+description: Filter by fee type
 type: object
 properties:
   feeFineTypeId:

@@ -1,3 +1,4 @@
+description: Token to represent user data
 type: object
 properties:
   value:

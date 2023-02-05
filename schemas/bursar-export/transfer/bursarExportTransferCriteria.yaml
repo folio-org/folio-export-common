@@ -1,3 +1,4 @@
+description: Transfer criteria
 type: object
 properties:
   conditions:

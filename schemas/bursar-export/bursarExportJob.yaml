@@ -1,5 +1,4 @@
-# TODO: add additionalProperties and required to filters
-# TODO: add descriptions
+description: Bursar export job schema
 type: object
 properties:
   filter:

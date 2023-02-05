@@ -1,3 +1,4 @@
+description: Token to fill in the length of another token
 type: object
 properties:
   character:

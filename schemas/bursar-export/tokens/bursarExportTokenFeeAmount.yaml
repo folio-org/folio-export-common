@@ -1,3 +1,4 @@
+description: Token to represent fee amount
 type: object
 properties:
   decimal:

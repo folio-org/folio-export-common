@@ -1,3 +1,4 @@
+description: Token to represent fee metadata
 type: object
 properties:
   value:

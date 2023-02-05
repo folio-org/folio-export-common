@@ -1,3 +1,4 @@
+description: Token to represent aggregated result of multiple fees
 type: object
 properties:
   value:

@@ -1,3 +1,4 @@
+description: Token permitted in header/footer
 type: array
 items:
   oneOf:

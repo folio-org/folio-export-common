@@ -1,3 +1,4 @@
+description: Usable token for bursar export
 type: array
 items:
   oneOf:

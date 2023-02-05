@@ -1,3 +1,4 @@
+description: Token to represent constant used for certain condition
 type: object
 properties:
   conditions:

@@ -19,3 +19,7 @@ properties:
     type: string
   lengthControl:
     $ref: bursarExportTokenLengthControl.yaml
+additionalProperties: false
+required:
+  - value
+  - timezone

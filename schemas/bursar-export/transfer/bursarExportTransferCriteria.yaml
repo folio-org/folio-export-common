@@ -13,6 +13,11 @@ properties:
         account:
           type: string
           format: uuid
+      additionalProperties: false
+      required:
+        - conditions
+        - owner
+        - account
   else:
     owner:
       type: string
@@ -20,3 +25,7 @@ properties:
     account:
       type: string
       format: uuid
+additionalProperties: false
+required:
+  - conditions
+  - else

@@ -10,3 +10,4 @@ items:
     - $ref: bursarExportTokenUserData.yaml
     - $ref: bursarExportTokenUserDataOptional.yaml
     - $ref: bursarExportTokenConstantConditional.yaml
+additionalProperties: false

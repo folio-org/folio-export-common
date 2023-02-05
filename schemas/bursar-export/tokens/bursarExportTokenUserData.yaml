@@ -7,3 +7,6 @@ properties:
       - PATRON_GROUP_ID
   lengthControl:
     $ref: bursarExportTokenLengthControl.yaml
+additionalProperties: false
+required:
+  - value

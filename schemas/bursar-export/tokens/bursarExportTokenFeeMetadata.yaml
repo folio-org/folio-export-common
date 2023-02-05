@@ -5,3 +5,6 @@ properties:
     enum:
       - FEE_FINE_TYPE_ID
       - FEE_FINE_ID
+additionalProperties: false
+required:
+  - value

@@ -14,3 +14,11 @@ properties:
     $ref: tokens/bursarExportHeaderFooter.yaml
   transferInfo:
     $ref: transfer/bursarExportTransferCriteria.yaml
+additionalProperties: false
+required:
+  - filter
+  - groupByPatron
+  - header
+  - data
+  - footer
+  - transferInfo

@@ -9,4 +9,9 @@ properties:
     enum: [FRONT, BACK]
   truncate:
     type: boolean
-nullable: true
+additionalProperties: false
+required:
+  - character
+  - length
+  - direction
+  - truncate

@@ -10,3 +10,7 @@ properties:
     description: only applicable for total amount
   lengthControl:
     $ref: bursarExportTokenLengthControl.yaml
+additionalProperties: false
+required:
+  - value
+  - decimal

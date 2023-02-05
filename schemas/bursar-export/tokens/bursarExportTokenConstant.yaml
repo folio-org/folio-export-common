@@ -1,4 +1,8 @@
+description: Token to represent a constant used as an arbitrary string
 type: object
 properties:
   value:
     type: string
+additionalProperties: false
+required:
+  - value

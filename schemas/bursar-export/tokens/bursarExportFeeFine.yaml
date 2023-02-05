@@ -1,3 +1,4 @@
+description: Usable token for bursar export
 type: array
 items:
   oneOf:
@@ -10,3 +11,4 @@ items:
     - $ref: bursarExportTokenUserData.yaml
     - $ref: bursarExportTokenUserDataOptional.yaml
     - $ref: bursarExportTokenConstantConditional.yaml
+additionalProperties: false

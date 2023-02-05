@@ -1,3 +1,4 @@
+description: Filter conditional operations
 type: object
 properties:
   operation:
@@ -10,3 +11,7 @@ properties:
     items:
       $ref: bursarExportFilter.yaml
     minItems: 1
+additionalProperties: false
+required:
+  - operation
+  - criteria

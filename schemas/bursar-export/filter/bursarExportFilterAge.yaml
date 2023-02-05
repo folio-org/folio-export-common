@@ -1,5 +1,9 @@
+description: Filter by fees older than certain number of days
 type: object
 properties:
   numDays:
     type: integer
     minimum: 1
+additionalProperties: false
+required:
+  - numDays

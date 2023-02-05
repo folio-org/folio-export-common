@@ -1,5 +1,9 @@
+description: Filter by service point
 type: object
 properties:
   servicePointId:
     type: string
     format: uuid
+additionalProperties: false
+required:
+  - servicePointId

@@ -1,5 +1,4 @@
-# TODO: add additionalProperties and required to filters
-# TODO: add descriptions
+description: Bursar export job schema
 type: object
 properties:
   filter:
@@ -14,3 +13,11 @@ properties:
     $ref: tokens/bursarExportHeaderFooter.yaml
   transferInfo:
     $ref: transfer/bursarExportTransferCriteria.yaml
+additionalProperties: false
+required:
+  - filter
+  - groupByPatron
+  - header
+  - data
+  - footer
+  - transferInfo

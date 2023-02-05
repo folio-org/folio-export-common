@@ -1,3 +1,4 @@
+description: Token to represent constant used for certain condition
 type: object
 properties:
   conditions:
@@ -9,5 +10,12 @@ properties:
           $ref: ../filter/bursarExportFilter.yaml
         value:
           $ref: bursarExportTokenConstant.yaml
+      required:
+        - condition
+        - value
   else:
     $ref: bursarExportTokenConstant.yaml
+additionalProperties: false
+required:
+  - conditions
+  - else

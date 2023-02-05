@@ -1,3 +1,4 @@
+description: Token to represent item data
 type: object
 properties:
   value:
@@ -14,3 +15,7 @@ properties:
     type: string
   lengthControl:
     $ref: bursarExportTokenLengthControl.yaml
+additionalProperties: false
+required:
+  - value
+  - placeholder

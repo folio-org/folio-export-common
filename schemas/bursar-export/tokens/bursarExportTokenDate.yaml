@@ -1,3 +1,4 @@
+description: Token to represent part of date
 type: object
 properties:
   value:
@@ -19,3 +20,7 @@ properties:
     type: string
   lengthControl:
     $ref: bursarExportTokenLengthControl.yaml
+additionalProperties: false
+required:
+  - value
+  - timezone

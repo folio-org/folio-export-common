@@ -1,3 +1,4 @@
+description: Token to represent optional user data
 type: object
 properties:
   value:
@@ -12,3 +13,7 @@ properties:
     type: string
   lengthControl:
     $ref: bursarExportTokenLengthControl.yaml
+additionalProperties: false
+required:
+  - value
+  - placeholder

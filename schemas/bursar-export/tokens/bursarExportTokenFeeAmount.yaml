@@ -1,6 +1,10 @@
+description: Token to represent fee amount
 type: object
 properties:
   decimal:
     type: boolean
   lengthControl:
     $ref: bursarExportTokenLengthControl.yaml
+additionalProperties: false
+required:
+  - decimal

@@ -1,3 +1,4 @@
+description: Filter by fee amount
 type: object
 properties:
   amount:
@@ -8,4 +9,8 @@ properties:
       - LESS_THAN_EQUAL
       - LESS_THAN
       - GREATER_THAN
-      - GREATER_THAN_EQUAL
+      - GREATER_THAN_EQUAL'
+additionalProperties: false
+required:
+  - amount
+  - condition

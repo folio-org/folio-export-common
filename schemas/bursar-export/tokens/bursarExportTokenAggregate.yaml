@@ -1,3 +1,4 @@
+description: Token to represent aggregated result of multiple fees
 type: object
 properties:
   value:
@@ -10,3 +11,7 @@ properties:
     description: only applicable for total amount
   lengthControl:
     $ref: bursarExportTokenLengthControl.yaml
+additionalProperties: false
+required:
+  - value
+  - decimal

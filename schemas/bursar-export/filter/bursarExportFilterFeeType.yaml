@@ -1,5 +1,9 @@
+description: Filter by fee type
 type: object
 properties:
   feeFineTypeId:
     type: string
     format: uuid
+additionalProperties: false
+required:
+  - feeFineTypeId

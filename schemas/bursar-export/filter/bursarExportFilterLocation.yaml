@@ -1,9 +1,9 @@
-description: Filter by patron group
+description: Filter by location
 type: object
 properties:
-  patronGroupId:
+  locationId:
     type: string
     format: uuid
 additionalProperties: false
 required:
-  - patronGroupId
+  - locationId

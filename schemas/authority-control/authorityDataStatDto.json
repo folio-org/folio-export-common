@@ -6,10 +6,12 @@
     "properties": {
       "id": {
         "type": "string",
+        "format": "uuid",
         "description": "Stat ID"
       },
       "authorityId": {
         "type": "string",
+        "format": "uuid",
         "description": "Authority ID"
       },
       "action": {

@@ -1,0 +1,23 @@
+{
+  "description": "Filter by fee amount",
+  "type": "object",
+  "properties": {
+    "amount": {
+      "type": "integer"
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "LESS_THAN_EQUAL",
+        "LESS_THAN",
+        "GREATER_THAN",
+        "GREATER_THAN_EQUAL'"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "amount",
+    "condition"
+  ]
+}

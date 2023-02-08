@@ -1,0 +1,14 @@
+{
+  "description": "Token to represent fee amount",
+  "type": "object",
+  "properties": {
+    "decimal": {
+      "type": "boolean"
+    },
+    "lengthControl": {
+      "$ref": "bursarExportTokenLengthControl.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["decimal"]
+}

@@ -1,0 +1,14 @@
+{
+  "description": "Filter by library",
+  "type": "object",
+  "properties": {
+    "libraryId": {
+      "type": "string",
+      "format": "uuid"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "libraryId"
+  ]
+}

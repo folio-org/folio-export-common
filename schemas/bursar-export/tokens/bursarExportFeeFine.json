@@ -1,0 +1,36 @@
+{
+  "description": "Usable token for bursar export",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      {
+        "$ref": "bursarExportTokenAggregate.json"
+      },
+      {
+        "$ref": "bursarExportTokenConstant.json"
+      },
+      {
+        "$ref": "bursarExportTokenDate.json"
+      },
+      {
+        "$ref": "bursarExportTokenFeeAmount.json"
+      },
+      {
+        "$ref": "bursarExportTokenFeeMetadata.json"
+      },
+      {
+        "$ref": "bursarExportTokenItemData.json"
+      },
+      {
+        "$ref": "bursarExportTokenUserData.json"
+      },
+      {
+        "$ref": "bursarExportTokenUserDataOptional.json"
+      },
+      {
+        "$ref": "bursarExportTokenConstantConditional.json"
+      }
+    ]
+  },
+  "additionalProperties": false
+}

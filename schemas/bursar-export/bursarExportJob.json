@@ -1,0 +1,33 @@
+{
+  "description": "Bursar export job schema",
+  "type": "object",
+  "properties": {
+    "filter": {
+      "$ref": "filter/bursarExportFilter.json"
+    },
+    "groupByPatron": {
+      "type": "boolean"
+    },
+    "header": {
+      "$ref": "tokens/bursarExportHeaderFooter.json"
+    },
+    "data": {
+      "$ref": "tokens/bursarExportFeeFine.json"
+    },
+    "footer": {
+      "$ref": "tokens/bursarExportHeaderFooter.json"
+    },
+    "transferInfo": {
+      "$ref": "transfer/bursarExportTransferCriteria.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "filter",
+    "groupByPatron",
+    "header",
+    "data",
+    "footer",
+    "transferInfo"
+  ]
+}

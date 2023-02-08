@@ -1,0 +1,12 @@
+{
+  "description": "Token permitted in header/footer",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "$ref": "./bursarExportTokenAggregate.json" },
+      { "$ref": "./bursarExportTokenConstant.json" },
+      { "$ref": "./bursarExportTokenDate.json" }
+    ]
+  },
+  "additionalProperties": false
+}

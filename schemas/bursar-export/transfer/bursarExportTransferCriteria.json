@@ -1,0 +1,39 @@
+{
+  "description": "Transfer criteria",
+  "type": "object",
+  "properties": {
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": {
+            "$ref": "../filter/bursarExportFilter.json"
+          },
+          "owner": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "account": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false,
+        "required": ["conditions", "owner", "account"]
+      }
+    },
+    "else": {
+      "owner": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "account": {
+        "type": "string",
+        "format": "uuid"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["conditions", "else"]
+}

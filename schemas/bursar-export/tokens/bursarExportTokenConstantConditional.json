@@ -1,0 +1,26 @@
+{
+  "description": "Token to represent constant used for certain condition",
+  "type": "object",
+  "properties": {
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": {
+            "$ref": "../filter/bursarExportFilter.json"
+          },
+          "value": {
+            "$ref": "bursarExportTokenConstant.json"
+          }
+        },
+        "required": ["condition", "value"]
+      }
+    },
+    "else": {
+      "$ref": "bursarExportTokenConstant.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["conditions", "else"]
+}

@@ -1,0 +1,15 @@
+{
+  "description": "Token to represent user data",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "enum": ["FOLIO_ID", "PATRON_GROUP_ID"]
+    },
+    "lengthControl": {
+      "$ref": "bursarExportTokenLengthControl.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["value"]
+}

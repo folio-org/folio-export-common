@@ -1,0 +1,11 @@
+{
+  "description": "Negation of filter for bursar export",
+  "type": "object",
+  "properties": {
+    "criteria": {
+      "$ref": "bursarExportFilter.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["criteria"]
+}

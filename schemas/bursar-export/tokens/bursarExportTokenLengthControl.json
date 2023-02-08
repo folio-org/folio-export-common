@@ -1,0 +1,29 @@
+{
+  "description": "Token to fill in the length of another token",
+  "type": "object",
+  "properties": {
+    "character": {
+      "type": "string"
+    },
+    "length": {
+      "type": "integer"
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "FRONT",
+        "BACK"
+      ]
+    },
+    "truncate": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "character",
+    "length",
+    "direction",
+    "truncate"
+  ]
+}

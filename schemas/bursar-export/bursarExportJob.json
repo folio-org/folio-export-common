@@ -9,13 +9,22 @@
       "type": "boolean"
     },
     "header": {
-      "$ref": "tokens/bursarExportHeaderFooter.json"
+      "type": "array",
+      "items": {
+        "$ref": "tokens/bursarExportHeaderFooter.json"
+      }
     },
     "data": {
-      "$ref": "tokens/bursarExportFeeFine.json"
+      "type": "array",
+      "items": {
+        "$ref": "tokens/bursarExportFeeFine.json"
+      }
     },
     "footer": {
-      "$ref": "tokens/bursarExportHeaderFooter.json"
+      "type": "array",
+      "items": {
+        "$ref": "tokens/bursarExportHeaderFooter.json"
+      }
     },
     "transferInfo": {
       "$ref": "transfer/bursarExportTransferCriteria.json"

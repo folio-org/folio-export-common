@@ -2,7 +2,7 @@
   "description": "Token to represent aggregated result of multiple fees",
   "type": "object",
   "properties": {
-    "val": {
+    "value": {
       "type": "string",
       "enum": ["NUM_ROWS", "TOTAL_AMOUNT"]
     },

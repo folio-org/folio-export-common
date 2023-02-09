@@ -7,6 +7,5 @@
       { "$ref": "./bursarExportTokenConstant.json" },
       { "$ref": "./bursarExportTokenDate.json" }
     ]
-  },
-  "additionalProperties": false
+  }
 }

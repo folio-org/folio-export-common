@@ -1,6 +1,6 @@
 {
   "description": "Filter for bursar export job",
-  "oneOf": [
+  "anyOf": [
     {
       "$ref": "bursarExportFilterAge.json"
     },

@@ -2,7 +2,7 @@
   "description": "Usable token for bursar export",
   "type": "array",
   "items": {
-    "oneOf": [
+    "anyOf": [
       {
         "$ref": "bursarExportTokenAggregate.json"
       },
@@ -31,6 +31,5 @@
         "$ref": "bursarExportTokenConstantConditional.json"
       }
     ]
-  },
-  "additionalProperties": false
+  }
 }

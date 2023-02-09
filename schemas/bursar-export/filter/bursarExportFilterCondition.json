@@ -7,11 +7,7 @@
       "enum": ["AND", "OR"]
     },
     "criteria": {
-      "type": "array",
-      "items": {
-        "$ref": "bursarExportFilter.json"
-      },
-      "minItems": 1
+      "$ref": "bursarExportFilter.json"
     }
   },
   "additionalProperties": false,

@@ -1,9 +1,0 @@
-description: Filter by institution
-type: object
-properties:
-  institutionId:
-    type: string
-    format: uuid
-additionalProperties: false
-required:
-  - institutionId

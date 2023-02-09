@@ -1,9 +1,0 @@
-description: Filter by patron group
-type: object
-properties:
-  patronGroupId:
-    type: string
-    format: uuid
-additionalProperties: false
-required:
-  - patronGroupId

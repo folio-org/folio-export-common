@@ -1,8 +1,0 @@
-description: Token permitted in header/footer
-type: array
-items:
-  oneOf:
-    - bursarExportTokenAggregate.yaml
-    - bursarExportTokenConstant.yaml
-    - bursarExportTokenDate.yaml
-additionalProperties: false

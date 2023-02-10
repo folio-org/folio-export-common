@@ -6,10 +6,12 @@
     "properties": {
       "id": {
         "type": "string",
+        "format": "uuid",
         "description": "link ID"
       },
       "instanceId": {
         "type": "string",
+        "format": "uuid",
         "description": "Instance ID"
       },
       "authorityDataStatsId": {
@@ -33,6 +35,7 @@
       },
       "createdAt": {
         "type": "string",
+        "format": "date-time",
         "description": "Date-time when update of all related links was created"
       }
     }

@@ -5,12 +5,15 @@
     "type": "object",
     "properties": {
       "links": {
-        "type": "object",
-        "description": "Authority changes statistic",
-        "$ref": "authorityDataStatDto.json#/AuthorityDataStatDto"
+        "type": "array",
+        "items": {
+          "description": "Instance links changes statistic",
+          "$ref": "instanceDataLinkDto.json#/InstanceDataLinkDto"
+        }
       },
       "next": {
         "type": "string",
+        "format": "date-time",
         "description": "Next response item date to seek by"
       }
     },

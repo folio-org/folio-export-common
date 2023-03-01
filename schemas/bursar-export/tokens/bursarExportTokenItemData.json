@@ -2,6 +2,10 @@
   "description": "Token to represent item data",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "ItemData"
+    },
     "value": {
       "type": "string",
       "enum": [
@@ -22,5 +26,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["value", "placeholder"]
+  "required": ["type", "value", "placeholder"]
 }

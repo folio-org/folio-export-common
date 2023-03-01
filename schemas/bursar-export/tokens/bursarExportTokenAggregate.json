@@ -2,6 +2,10 @@
   "description": "Token to represent aggregated result of multiple fees",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Aggregate"
+    },
     "value": {
       "type": "string",
       "enum": ["NUM_ROWS", "TOTAL_AMOUNT"]
@@ -15,5 +19,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["value", "decimal"]
+  "required": ["type", "value", "decimal"]
 }

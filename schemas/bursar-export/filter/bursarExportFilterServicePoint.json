@@ -2,13 +2,15 @@
   "description": "Filter by service point",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "ServicePoint"
+    },
     "servicePointId": {
       "type": "string",
       "format": "uuid"
     }
   },
   "additionalProperties": false,
-  "required": [
-    "servicePointId"
-  ]
+  "required": ["type", "servicePointId"]
 }

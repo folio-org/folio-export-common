@@ -1,6 +1,6 @@
 {
   "description": "Filter for bursar export job",
-  "anyOf": [
+  "oneOf": [
     {
       "$ref": "bursarExportFilterAge.json"
     },
@@ -35,5 +35,20 @@
       "$ref": "bursarExportFilterNegation.json"
     }
   ],
-  "additionalProperties": false
+  "discriminator": {
+    "propertyName": "type",
+    "mapping": {
+      "Age": "bursarExportFilterAge.json",
+      "Amount": "bursarExportFilterAmount.json",
+      "Campus": "bursarExportFilterCampus.json",
+      "FeeType": "bursarExportFilterFeeType.json",
+      "Institution": "bursarExportFilterInstitution.json",
+      "Library": "bursarExportFilterLibrary.json",
+      "Location": "bursarExportFilterLocation.json",
+      "PatronGroup": "bursarExportFilterPatronGroup.json",
+      "ServicePoint": "bursarExportFilterServicePoint.json",
+      "Condition": "bursarExportFilterCondition.json",
+      "Negation": "bursarExportFilterNegation.json"
+    }
+  }
 }

@@ -2,12 +2,14 @@
   "description": "Token to represent a constant used as an arbitrary string",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Constant"
+    },
     "value": {
       "type": "string"
     }
   },
   "additionalProperties": false,
-  "required": [
-    "value"
-  ]
+  "required": ["type", "value"]
 }

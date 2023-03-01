@@ -2,6 +2,10 @@
   "description": "Token to represent constant used for certain condition",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "ConstantConditional"
+    },
     "conditions": {
       "type": "array",
       "items": {
@@ -22,5 +26,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["conditions", "else"]
+  "required": ["type", "conditions", "else"]
 }

@@ -1,6 +1,6 @@
 {
   "description": "Usable token for bursar export",
-  "anyOf": [
+  "oneOf": [
     {
       "$ref": "bursarExportTokenAggregate.json"
     },
@@ -28,5 +28,19 @@
     {
       "$ref": "bursarExportTokenConstantConditional.json"
     }
-  ]
+  ],
+  "discriminator": {
+    "propertyName": "type",
+    "mapping": {
+      "Aggregate": "bursarExportTokenAggregate.json",
+      "Constant": "bursarExportTokenConstant.json",
+      "Date": "bursarExportTokenDate.json",
+      "FeeAmount": "bursarExportTokenFeeAmount.json",
+      "FeeMetadata": "bursarExportTokenFeeMetadata.json",
+      "ItemData": "bursarExportTokenItemData.json",
+      "UserData": "bursarExportTokenUserData.json",
+      "UserDataOptional": "bursarExportTokenUserDataOptional.json",
+      "ConstantConditional": "bursarExportTokenConstantConditional.json"
+    }
+  }
 }

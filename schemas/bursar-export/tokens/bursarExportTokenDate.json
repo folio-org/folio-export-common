@@ -2,6 +2,10 @@
   "description": "Token to represent part of date",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Date"
+    },
     "value": {
       "type": "string",
       "enum": [
@@ -27,5 +31,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["value", "timezone"]
+  "required": ["type", "value", "timezone"]
 }

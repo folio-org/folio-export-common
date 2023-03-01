@@ -17,7 +17,7 @@
     "data": {
       "type": "array",
       "items": {
-        "$ref": "tokens/bursarExportFeeFine.json"
+        "$ref": "tokens/bursarExportDataTOken.json"
       }
     },
     "footer": {

@@ -2,16 +2,15 @@
   "description": "Token to represent fee metadata",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "FeeMetadata"
+    },
     "value": {
       "type": "string",
-      "enum": [
-        "FEE_FINE_TYPE_ID",
-        "FEE_FINE_ID"
-      ]
+      "enum": ["FEE_FINE_TYPE_ID", "FEE_FINE_ID"]
     }
   },
   "additionalProperties": false,
-  "required": [
-    "value"
-  ]
+  "required": ["type", "value"]
 }

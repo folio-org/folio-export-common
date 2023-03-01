@@ -2,13 +2,15 @@
   "description": "Filter by fees older than certain number of days",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Age"
+    },
     "numDays": {
       "type": "integer",
       "minimum": 1
     }
   },
   "additionalProperties": false,
-  "required": [
-    "numDays"
-  ]
+  "required": ["type", "numDays"]
 }

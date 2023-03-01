@@ -2,13 +2,15 @@
   "description": "Filter by location",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Location"
+    },
     "locationId": {
       "type": "string",
       "format": "uuid"
     }
   },
   "additionalProperties": false,
-  "required": [
-    "locationId"
-  ]
+  "required": ["type", "locationId"]
 }

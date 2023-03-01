@@ -2,6 +2,10 @@
   "description": "Token to represent optional user data",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "UserDataOptional"
+    },
     "value": {
       "type": "string",
       "enum": ["BARCODE", "USERNAME", "FIRST_NAME", "MIDDLE_NAME", "LAST_NAME"]
@@ -14,5 +18,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["value", "placeholder"]
+  "required": ["type", "value", "placeholder"]
 }

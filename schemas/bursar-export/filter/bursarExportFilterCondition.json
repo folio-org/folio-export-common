@@ -2,14 +2,21 @@
   "description": "Filter conditional operations",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Condition"
+    },
     "operation": {
       "type": "string",
       "enum": ["AND", "OR"]
     },
     "criteria": {
-      "$ref": "bursarExportFilter.json"
+      "type": "array",
+      "items": {
+        "$ref": "bursarExportFilter.json"
+      }
     }
   },
   "additionalProperties": false,
-  "required": ["operation", "criteria"]
+  "required": ["type", "operation", "criteria"]
 }

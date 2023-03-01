@@ -2,13 +2,15 @@
   "description": "Filter by fee type",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "FeeType"
+    },
     "feeFineTypeId": {
       "type": "string",
       "format": "uuid"
     }
   },
   "additionalProperties": false,
-  "required": [
-    "feeFineTypeId"
-  ]
+  "required": ["type", "feeFineTypeId"]
 }

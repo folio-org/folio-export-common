@@ -2,6 +2,10 @@
   "description": "Filter by fee amount",
   "type": "object",
   "properties": {
+    "type": {
+      "type": "string",
+      "default": "Amount"
+    },
     "amount": {
       "type": "integer"
     },
@@ -16,8 +20,5 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "amount",
-    "condition"
-  ]
+  "required": ["type", "amount", "condition"]
 }

@@ -8,16 +8,7 @@
       "$ref": "bursarExportFilterAmount.json"
     },
     {
-      "$ref": "bursarExportFilterCampus.json"
-    },
-    {
       "$ref": "bursarExportFilterFeeType.json"
-    },
-    {
-      "$ref": "bursarExportFilterInstitution.json"
-    },
-    {
-      "$ref": "bursarExportFilterLibrary.json"
     },
     {
       "$ref": "bursarExportFilterLocation.json"

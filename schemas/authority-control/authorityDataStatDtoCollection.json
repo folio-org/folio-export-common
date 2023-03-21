@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Collection of authority changes statistic",
   "AuthorityDataStatDtoCollection": {
+    "x-implements": "org.folio.dew.domain.dto.authoritycontrol.DataStatCollectionDTO",
     "type": "object",
     "properties": {
       "stats": {

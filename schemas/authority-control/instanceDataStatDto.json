@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Linked bib statistics",
   "InstanceDataStatDto": {
+    "x-implements": "org.folio.dew.domain.dto.authoritycontrol.DataStatDTO",
     "type": "object",
     "properties": {
       "instanceId": {

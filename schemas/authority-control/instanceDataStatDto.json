@@ -13,7 +13,7 @@
         "type": "string",
         "description": "Instance title"
       },
-      "bibRecordsTag": {
+      "bibRecordTag": {
         "type": "string",
         "description": "Bib record tag"
       },

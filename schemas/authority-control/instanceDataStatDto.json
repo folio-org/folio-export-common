@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Linked bib statistics",
+  "InstanceDataStatDto": {
+    "type": "object",
+    "properties": {
+      "instanceId": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Linked instance id, UUID"
+      },
+      "instanceTitle": {
+        "type": "string",
+        "description": "Instance title"
+      },
+      "bibRecordsTag": {
+        "type": "string",
+        "description": "Bib record tag"
+      },
+      "authorityNaturalId": {
+        "type": "string",
+        "description": "Linked authority natural id"
+      },
+      "updatedAt": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Link last updated at"
+      },
+      "errorCause": {
+        "type": "string",
+        "description": "Cause of error for updating linked bib"
+      }
+    }
+  }
+}

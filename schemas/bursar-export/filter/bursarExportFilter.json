@@ -24,9 +24,11 @@
     },
     {
       "$ref": "bursarExportFilterNegation.json"
+    },
+    {
+      "$ref": "bursarExportFilterPass.json"
     }
   ],
-  "nullable": true,
   "discriminator": {
     "propertyName": "type",
     "mapping": {

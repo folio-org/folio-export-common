@@ -26,6 +26,7 @@
       "$ref": "bursarExportFilterNegation.json"
     }
   ],
+  "nullable": true,
   "discriminator": {
     "propertyName": "type",
     "mapping": {

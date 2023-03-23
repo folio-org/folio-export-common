@@ -1,0 +1,42 @@
+{
+  "description": "Token to represent part of date about a fee",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "default": "FeeDate"
+    },
+    "property": {
+      "type": "string",
+      "enum": ["CREATED", "UPDATED", "DUE", "RETURNED"]
+    },
+    "value": {
+      "type": "string",
+      "enum": [
+        "YEAR_LONG",
+        "YEAR_SHORT",
+        "MONTH",
+        "DATE",
+        "HOUR",
+        "MINUTE",
+        "SECOND",
+        "QUARTER",
+        "WEEK_OF_YEAR",
+        "WEEK_OF_YEAR_ISO",
+        "WEEK_YEAR",
+        "WEEK_YEAR_ISO"
+      ]
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "lengthControl": {
+      "$ref": "bursarExportTokenLengthControl.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type", "property", "value", "placeholder", "timezone"]
+}

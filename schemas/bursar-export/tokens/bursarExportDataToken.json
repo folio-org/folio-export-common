@@ -8,7 +8,10 @@
       "$ref": "bursarExportTokenConstant.json"
     },
     {
-      "$ref": "bursarExportTokenDate.json"
+      "$ref": "bursarExportTokenCurrentDate.json"
+    },
+    {
+      "$ref": "bursarExportTokenFeeDate.json"
     },
     {
       "$ref": "bursarExportTokenFeeAmount.json"
@@ -34,7 +37,8 @@
     "mapping": {
       "Aggregate": "bursarExportTokenAggregate.json",
       "Constant": "bursarExportTokenConstant.json",
-      "Date": "bursarExportTokenDate.json",
+      "CurrentDate": "bursarExportTokenCurrentDate.json",
+      "FeeDate": "bursarExportTokenFeeDate.json",
       "FeeAmount": "bursarExportTokenFeeAmount.json",
       "FeeMetadata": "bursarExportTokenFeeMetadata.json",
       "ItemData": "bursarExportTokenItemData.json",

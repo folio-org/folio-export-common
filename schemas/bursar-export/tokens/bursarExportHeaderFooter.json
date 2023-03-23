@@ -3,14 +3,14 @@
   "oneOf": [
     { "$ref": "bursarExportTokenAggregate.json" },
     { "$ref": "bursarExportTokenConstant.json" },
-    { "$ref": "bursarExportTokenDate.json" }
+    { "$ref": "bursarExportTokenCurrentDate.json" }
   ],
   "discriminator": {
     "propertyName": "type",
     "mapping": {
       "Aggregate": "bursarExportTokenAggregate.json",
       "Constant": "bursarExportTokenConstant.json",
-      "Date": "bursarExportTokenDate.json"
+      "CurrentDate": "bursarExportTokenCurrentDate.json"
     }
   }
 }

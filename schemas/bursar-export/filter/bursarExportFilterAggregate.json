@@ -1,0 +1,28 @@
+{
+  "description": "Filter by aggregate data",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "default": "Aggregate"
+    },
+    "property": {
+      "type": "string",
+      "enum": ["NUM_ROWS", "TOTAL_AMOUNT"]
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "LESS_THAN_EQUAL",
+        "LESS_THAN",
+        "GREATER_THAN",
+        "GREATER_THAN_EQUAL"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type", "property", "amount", "condition"]
+}

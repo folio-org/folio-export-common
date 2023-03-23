@@ -1,14 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Collection of instance changes statistic",
-  "InstanceDataLinkDtoCollection": {
+  "description": "Collection of linked bibs update statistics",
+  "InstanceDataStatDtoCollection": {
+    "x-implements": "org.folio.dew.domain.dto.authoritycontrol.DataStatCollectionDTO",
     "type": "object",
     "properties": {
-      "links": {
+      "stats": {
         "type": "array",
         "items": {
           "description": "Instance links changes statistic",
-          "$ref": "instanceDataLinkDto.json#/InstanceDataLinkDto"
+          "$ref": "instanceDataStatDto.json#/InstanceDataStatDto"
         }
       },
       "next": {
@@ -18,7 +19,7 @@
       }
     },
     "required": [
-      "links",
+      "stats",
       "next"
     ]
   }

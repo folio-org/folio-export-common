@@ -1,0 +1,18 @@
+{
+  "description": "Schema to represent the type of date information",
+  "type": "string",
+  "enum": [
+    "YEAR_LONG",
+    "YEAR_SHORT",
+    "MONTH",
+    "DATE",
+    "HOUR",
+    "MINUTE",
+    "SECOND",
+    "QUARTER",
+    "WEEK_OF_YEAR",
+    "WEEK_OF_YEAR_ISO",
+    "WEEK_YEAR",
+    "WEEK_YEAR_ISO"
+  ]
+}

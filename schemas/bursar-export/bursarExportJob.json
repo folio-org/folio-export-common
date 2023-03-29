@@ -8,6 +8,9 @@
     "groupByPatron": {
       "type": "boolean"
     },
+    "groupByPatronFilter": {
+      "$ref": "filter/bursarExportFilterAggregate.json"
+    },
     "header": {
       "type": "array",
       "items": {

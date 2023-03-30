@@ -5,9 +5,6 @@
       "$ref": "bursarExportFilterAge.json"
     },
     {
-      "$ref": "bursarExportFilterAggregate.json"
-    },
-    {
       "$ref": "bursarExportFilterAmount.json"
     },
     {
@@ -36,7 +33,6 @@
     "propertyName": "type",
     "mapping": {
       "Age": "bursarExportFilterAge.json",
-      "Aggregate": "bursarExportFilterAggregate.json",
       "Amount": "bursarExportFilterAmount.json",
       "FeeType": "bursarExportFilterFeeType.json",
       "Location": "bursarExportFilterLocation.json",

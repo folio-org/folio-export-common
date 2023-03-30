@@ -24,13 +24,17 @@
       }
     },
     "else": {
-      "owner": {
-        "type": "string",
-        "format": "uuid"
-      },
-      "account": {
-        "type": "string",
-        "format": "uuid"
+      "type": "object",
+      "description": "pair of owner and account to transfer fees/fines that do not meet any specified conditions to",
+      "properties": {
+        "owner": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "account": {
+          "type": "string",
+          "format": "uuid"
+        }
       }
     }
   },

@@ -10,27 +10,23 @@
           "condition": {
             "$ref": "../filter/bursarExportFilter.json"
           },
-          "owner": {
-            "type": "string",
-            "format": "uuid"
-          },
           "account": {
             "type": "string",
             "format": "uuid"
           }
         },
         "additionalProperties": false,
-        "required": ["conditions", "owner", "account"]
+        "required": ["conditions", "account"]
       }
     },
     "else": {
-      "owner": {
-        "type": "string",
-        "format": "uuid"
-      },
-      "account": {
-        "type": "string",
-        "format": "uuid"
+      "type": "object",
+      "description": "account to transfer fees/fines that do not meet any specified conditions to",
+      "properties": {
+        "account": {
+          "type": "string",
+          "format": "uuid"
+        }
       }
     }
   },

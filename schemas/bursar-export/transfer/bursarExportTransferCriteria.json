@@ -16,7 +16,7 @@
           }
         },
         "additionalProperties": false,
-        "required": ["conditions", "owner", "account"]
+        "required": ["conditions", "account"]
       }
     },
     "else": {

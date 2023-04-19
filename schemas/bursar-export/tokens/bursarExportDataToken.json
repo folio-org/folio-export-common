@@ -29,7 +29,7 @@
       "$ref": "bursarExportTokenUserDataOptional.json"
     },
     {
-      "$ref": "bursarExportTokenConstantConditional.json"
+      "$ref": "bursarExportTokenConditional.json"
     }
   ],
   "discriminator": {
@@ -44,7 +44,7 @@
       "ItemData": "bursarExportTokenItemData.json",
       "UserData": "bursarExportTokenUserData.json",
       "UserDataOptional": "bursarExportTokenUserDataOptional.json",
-      "ConstantConditional": "bursarExportTokenConstantConditional.json"
+      "Conditional": "bursarExportTokenConditional.json"
     }
   }
 }

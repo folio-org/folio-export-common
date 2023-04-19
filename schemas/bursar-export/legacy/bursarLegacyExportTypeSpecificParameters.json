@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Migration - Export parameters which depend on export type",
+  "BursarLegacyExportTypeSpecificParameters": {
+    "type": "object",
+    "properties": {
+      "bursarFeeFines": {
+        "$ref": "legacyBursarFeeFines.json#/LegacyBursarFeeFines"
+      },
+      "vendorEdiOrdersExportConfig": {
+        "$ref": "../../acquisitions/vendorEdiOrdersExportConfig.json#/VendorEdiOrdersExportConfig"
+      },
+      "query": {
+        "description": "CQL query to be passed to the module which data is being exported. Use it to filter data.",
+        "type": "string",
+        "maxLength": 5000
+      },
+      "eHoldingsExportConfig": {
+        "$ref": "../../eholdings/eHoldingsExportConfig.json#/EHoldingsExportConfig"
+      },
+      "authorityControlExportConfig": {
+        "$ref": "../../authority-control/authorityControlExportConfig.json#/AuthorityControlExportConfig"
+      }
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
-  "description": "Token to represent constant used for certain condition",
+  "description": "Token to represent a variety of tokens for certain condition",
   "type": "object",
   "properties": {
     "type": {
       "type": "string",
-      "default": "ConstantConditional"
+      "default": "Conditional"
     },
     "conditions": {
       "type": "array",
@@ -15,14 +15,14 @@
             "$ref": "../filter/bursarExportFilter.json"
           },
           "value": {
-            "$ref": "bursarExportTokenConstant.json"
+            "$ref": "bursarExportDataToken.json"
           }
         },
         "required": ["condition", "value"]
       }
     },
     "else": {
-      "$ref": "bursarExportTokenConstant.json"
+      "$ref": "bursarExportDataToken.json"
     }
   },
   "additionalProperties": false,

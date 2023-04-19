@@ -1,5 +1,5 @@
 {
-  "description": "Token to represent a variety of tokens for certain condition",
+  "description": "Token to represent other data tokens depending on certain conditions",
   "type": "object",
   "properties": {
     "type": {

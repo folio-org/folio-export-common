@@ -1,0 +1,16 @@
+{
+  "description": "Filter by fee fine owner",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "default": "FeeFineOwner"
+    },
+    "feeFineOwner": {
+      "type": "string",
+      "format": "uuid"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type", "feeFineOwner"]
+}

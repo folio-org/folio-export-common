@@ -1,14 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Migration - Collection of jobs",
-  "BursarExportLegacyJobCollection": {
+  "LegacyJobCollection": {
     "type": "object",
     "properties": {
       "jobRecords": {
         "type": "array",
         "description": "Jobs",
         "items": {
-          "$ref": "legacyJob.json#/BursarExportLegacyJob"
+          "$ref": "legacyJob.json#/LegacyJob"
         }
       },
       "totalRecords": {

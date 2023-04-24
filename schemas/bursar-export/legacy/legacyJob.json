@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "older schema for Job",
-  "BursarExportLegacyJob": {
+  "LegacyJob": {
     "type": "object",
     "properties": {
       "id": {
@@ -36,7 +36,7 @@
         "$ref": "../../exportType.json#/ExportType"
       },
       "exportTypeSpecificParameters": {
-        "$ref": "legacyExportTypeSpecificParameters.json#/BursarLegacyExportTypeSpecificParameters"
+        "$ref": "legacyExportTypeSpecificParameters.json#/LegacyExportTypeSpecificParameters"
       },
       "status": {
         "description": "Job status",

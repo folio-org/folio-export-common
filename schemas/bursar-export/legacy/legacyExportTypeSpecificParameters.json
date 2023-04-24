@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Migration - Export parameters which depend on export type",
-  "BursarLegacyExportTypeSpecificParameters": {
+  "LegacyExportTypeSpecificParameters": {
     "type": "object",
     "properties": {
       "bursarFeeFines": {

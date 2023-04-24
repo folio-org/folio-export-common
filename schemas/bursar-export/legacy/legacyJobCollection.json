@@ -8,7 +8,7 @@
         "type": "array",
         "description": "Jobs",
         "items": {
-          "$ref": "bursarExportLegacyJob.json#/BursarExportLegacyJob"
+          "$ref": "legacyJob.json#/BursarExportLegacyJob"
         }
       },
       "totalRecords": {

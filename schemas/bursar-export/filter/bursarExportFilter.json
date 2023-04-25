@@ -27,6 +27,9 @@
     },
     {
       "$ref": "bursarExportFilterPass.json"
+    },
+    {
+      "$ref": "bursarExportFilterFeeFineOwner.json"
     }
   ],
   "discriminator": {
@@ -35,6 +38,7 @@
       "Age": "bursarExportFilterAge.json",
       "Amount": "bursarExportFilterAmount.json",
       "FeeType": "bursarExportFilterFeeType.json",
+      "FeeFineOwner": "bursarExportFilterFeeFineOwner.json",
       "Location": "bursarExportFilterLocation.json",
       "PatronGroup": "bursarExportFilterPatronGroup.json",
       "ServicePoint": "bursarExportFilterServicePoint.json",

@@ -8,7 +8,7 @@
     },
     "value": {
       "type": "string",
-      "enum": ["FOLIO_ID", "PATRON_GROUP_ID", "EXTERNAL_SYSTEM_ID"]
+      "enum": ["FOLIO_ID", "PATRON_GROUP_ID", "EXTERNAL_SYSTEM_ID", "CORNELL_EXTERNAL_SYSTEM_ID"]
     },
     "lengthControl": {
       "$ref": "bursarExportTokenLengthControl.json"

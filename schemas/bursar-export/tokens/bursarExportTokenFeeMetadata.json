@@ -9,6 +9,9 @@
     "value": {
       "type": "string",
       "enum": ["FEE_FINE_TYPE_ID", "FEE_FINE_TYPE_NAME"]
+    },
+    "lengthControl": {
+      "$ref": "bursarExportTokenLengthControl.json"
     }
   },
   "additionalProperties": false,

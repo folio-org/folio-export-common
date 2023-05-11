@@ -3,7 +3,8 @@
   "type": "object",
   "properties": {
     "character": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 1
     },
     "length": {
       "type": "integer"

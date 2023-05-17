@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Linked bib statistics",
+  "InstanceDataStatDto": {
+    "x-implements": "org.folio.dew.domain.dto.authoritycontrol.DataStatDTO",
+    "type": "object",
+    "properties": {
+      "instanceId": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Linked instance id, UUID"
+      },
+      "instanceTitle": {
+        "type": "string",
+        "description": "Instance title"
+      },
+      "bibRecordTag": {
+        "type": "string",
+        "description": "Bib record tag"
+      },
+      "authorityNaturalId": {
+        "type": "string",
+        "description": "Linked authority natural id"
+      },
+      "updatedAt": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Link last updated at"
+      },
+      "errorCause": {
+        "type": "string",
+        "description": "Cause of error for updating linked bib"
+      }
+    }
+  }
+}

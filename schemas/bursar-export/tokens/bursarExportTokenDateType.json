@@ -10,9 +10,7 @@
     "MINUTE",
     "SECOND",
     "QUARTER",
-    "WEEK_OF_YEAR",
     "WEEK_OF_YEAR_ISO",
-    "WEEK_YEAR",
     "WEEK_YEAR_ISO"
   ]
 }

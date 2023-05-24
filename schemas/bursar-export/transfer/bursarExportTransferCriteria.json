@@ -16,7 +16,7 @@
           }
         },
         "additionalProperties": false,
-        "required": ["conditions", "account"]
+        "required": ["condition", "account"]
       }
     },
     "else": {
@@ -27,7 +27,9 @@
           "type": "string",
           "format": "uuid"
         }
-      }
+      },
+      "additionalProperties": false,
+      "required": ["account"]
     }
   },
   "additionalProperties": false,

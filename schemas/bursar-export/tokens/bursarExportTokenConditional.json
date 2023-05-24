@@ -18,6 +18,7 @@
             "$ref": "bursarExportDataToken.json"
           }
         },
+        "additionalProperties": false,
         "required": ["condition", "value"]
       }
     },

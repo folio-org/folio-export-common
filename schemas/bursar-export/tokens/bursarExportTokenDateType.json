@@ -11,6 +11,11 @@
     "SECOND",
     "QUARTER",
     "WEEK_OF_YEAR_ISO",
-    "WEEK_YEAR_ISO"
+    "WEEK_YEAR_ISO",
+    "DAY_OF_YEAR",
+    "YYYYMMDD",
+    "YYYY-MM-DD",
+    "MMDDYYYY",
+    "DDMMYYYY"
   ]
 }

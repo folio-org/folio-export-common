@@ -10,10 +10,13 @@
       "type": "string",
       "enum": ["FOLIO_ID", "PATRON_GROUP_ID", "EXTERNAL_SYSTEM_ID"]
     },
+    "placeholder": {
+      "type": "string"
+    },
     "lengthControl": {
       "$ref": "bursarExportTokenLengthControl.json"
     }
   },
   "additionalProperties": false,
-  "required": ["type", "value"]
+  "required": ["type", "value", "placeholder"]
 }

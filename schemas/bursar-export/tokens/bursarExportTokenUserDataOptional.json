@@ -8,7 +8,7 @@
     },
     "value": {
       "type": "string",
-      "enum": ["BARCODE", "USERNAME", "FIRST_NAME", "MIDDLE_NAME", "LAST_NAME"]
+      "enum": ["BARCODE", "USERNAME", "FIRST_NAME", "MIDDLE_NAME", "LAST_NAME", "PATRON_GROUP_ID", "EXTERNAL_SYSTEM_ID"]
     },
     "placeholder": {
       "type": "string"

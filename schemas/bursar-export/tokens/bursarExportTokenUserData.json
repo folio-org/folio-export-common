@@ -8,15 +8,12 @@
     },
     "value": {
       "type": "string",
-      "enum": ["FOLIO_ID", "PATRON_GROUP_ID", "EXTERNAL_SYSTEM_ID"]
-    },
-    "placeholder": {
-      "type": "string"
+      "enum": ["FOLIO_ID"]
     },
     "lengthControl": {
       "$ref": "bursarExportTokenLengthControl.json"
     }
   },
   "additionalProperties": false,
-  "required": ["type", "value", "placeholder"]
+  "required": ["type", "value"]
 }

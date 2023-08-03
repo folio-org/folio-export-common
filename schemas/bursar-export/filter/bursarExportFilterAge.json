@@ -9,8 +9,18 @@
     "numDays": {
       "type": "integer",
       "minimum": 1
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "LESS_THAN_EQUAL",
+        "LESS_THAN",
+        "GREATER_THAN",
+        "GREATER_THAN_EQUAL"
+      ]
     }
+
   },
   "additionalProperties": false,
-  "required": ["type", "numDays"]
+  "required": ["type", "numDays", "condition"]
 }

@@ -1,0 +1,34 @@
+{
+  "description": "Token to represent part of date about a fee",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of data token",
+      "type": "string",
+      "default": "FeeDate"
+    },
+    "property": {
+      "description": "Property of fee to be represented by token",
+      "type": "string",
+      "enum": ["CREATED", "UPDATED", "DUE", "RETURNED"]
+    },
+    "value": {
+      "description": "Type of date value to represent",
+      "$ref": "bursarExportTokenDateType.json"
+    },
+    "placeholder": {
+      "description": "Placeholder value to use if date is not available",
+      "type": "string"
+    },
+    "timezone": {
+      "description": "Timezone to use for date",
+      "type": "string"
+    },
+    "lengthControl": {
+      "description": "Control length of token",
+      "$ref": "bursarExportTokenLengthControl.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type", "property", "value", "placeholder", "timezone"]
+}

@@ -3,10 +3,12 @@
   "type": "object",
   "properties": {
     "type": {
+      "description": "Type of filter",
       "type": "string",
       "default": "FeeFineOwner"
     },
     "feeFineOwner": {
+      "description": "Id of fee/fine owner to filter by",
       "type": "string",
       "format": "uuid"
     }

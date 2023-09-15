@@ -3,14 +3,17 @@
   "type": "object",
   "properties": {
     "type": {
+      "description": "Type of data token",
       "type": "string",
       "default": "UserData"
     },
     "value": {
+      "description": "User data to represent",
       "type": "string",
       "enum": ["FOLIO_ID"]
     },
     "lengthControl": {
+      "description": "Control length of token",
       "$ref": "bursarExportTokenLengthControl.json"
     }
   },

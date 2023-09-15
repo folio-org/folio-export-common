@@ -3,10 +3,12 @@
   "type": "object",
   "properties": {
     "type": {
+      "description": "Type of filter",
       "type": "string",
       "default": "ServicePoint"
     },
     "servicePointId": {
+      "description": "Id of service point to filter by",
       "type": "string",
       "format": "uuid"
     }

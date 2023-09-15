@@ -1,15 +1,18 @@
 {
-  "description": "Token to fill in the length of another token",
+  "description": "Token to fill in or truncate the length of another token",
   "type": "object",
   "properties": {
     "character": {
+      "description": "Character to fill in with",
       "type": "string",
       "maxLength": 1
     },
     "length": {
+      "description": "Desired length for the token",
       "type": "integer"
     },
     "direction": {
+      "description": "Direction to fill in or truncate from",
       "type": "string",
       "enum": [
         "FRONT",
@@ -17,6 +20,7 @@
       ]
     },
     "truncate": {
+      "description": "Whether to truncate the token if it is longer than the desired length",
       "type": "boolean"
     }
   },

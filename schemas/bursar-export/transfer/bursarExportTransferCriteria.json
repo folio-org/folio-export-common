@@ -3,14 +3,17 @@
   "type": "object",
   "properties": {
     "conditions": {
+      "description": "Conditions to apply to the transfer of fees/fines",
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
           "condition": {
+            "description": "Condition to apply tp this item",
             "$ref": "../filter/bursarExportFilter.json"
           },
           "account": {
+            "description": "Account to transfer fees/fines that meet this condition to",
             "type": "string",
             "format": "uuid"
           }
@@ -21,9 +24,10 @@
     },
     "else": {
       "type": "object",
-      "description": "account to transfer fees/fines that do not meet any specified conditions to",
+      "description": "If none of the specified conditions is met",
       "properties": {
         "account": {
+          "description": "Account to transfer fees/fines that do not meet any specified conditions to",
           "type": "string",
           "format": "uuid"
         }

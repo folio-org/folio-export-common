@@ -3,13 +3,16 @@
   "type": "object",
   "properties": {
     "type": {
+      "description": "Type of filter",
       "type": "string",
       "default": "Amount"
     },
     "amount": {
+      "description": "Amount to filter by",
       "type": "integer"
     },
     "condition": {
+      "description": "Condition to filter by",
       "type": "string",
       "enum": [
         "LESS_THAN_EQUAL",

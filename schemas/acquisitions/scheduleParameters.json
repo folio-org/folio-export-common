@@ -34,6 +34,10 @@
         "type": "string",
         "description": "Time to run the job"
       },
+      "scheduleDay": {
+        "type": "integer",
+        "description": "Day of month to run the job (One-based)"
+      },
       "weekDays": {
         "type": "array",
         "description": "Day of week to run the job",

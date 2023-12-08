@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
       "bursarFeeFines": {
-        "$ref": "bursar-export/bursarExportJob.json"
+        "$ref": "bursarFeeFines.json#/BursarFeeFines"
       },
       "vendorEdiOrdersExportConfig": {
         "$ref": "acquisitions/vendorEdiOrdersExportConfig.json#/VendorEdiOrdersExportConfig"

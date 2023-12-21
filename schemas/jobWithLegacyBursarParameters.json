@@ -36,7 +36,7 @@
         "$ref": "exportType.json#/ExportType"
       },
       "exportTypeSpecificParameters": {
-        "$ref": "./bursar-export/legacy/legacyExportTypeSpecificParameters.json#/LegacyExportTypeSpecificParameters"
+        "$ref": "exportTypeSpecificParametersWithLegacyBursar.json#/ExportTypeSpecificParametersWithLegacyBursar"
       },
       "status": {
         "description": "Job status",

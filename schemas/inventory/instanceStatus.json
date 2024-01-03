@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "An instance status",
+  "InstanceStatus": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "unique ID of the instance status; a UUID"
+      },
+      "code": {
+        "type": "string",
+        "description": "code of the instance status"
+      },
+      "name": {
+        "type": "string",
+        "description": "name of the instance status"
+      },
+      "source": {
+        "type": "string",
+        "description": "label indicating where the instance status entry originates from, i.e. 'folio' or 'local'"
+      },
+      "metadata": {
+        "type": "object",
+        "$ref": "../common/metadata.json#/Metadata",
+        "readonly": true
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "source"
+    ]
+  }
+}

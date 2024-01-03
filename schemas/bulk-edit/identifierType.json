@@ -13,9 +13,7 @@
       "USER_NAME",
       "EXTERNAL_SYSTEM_ID",
       "INSTANCE_HRID",
-      "ITEM_BARCODE",
-      "ISBN",
-      "ISSN"
+      "ITEM_BARCODE"
     ]
   }
 }

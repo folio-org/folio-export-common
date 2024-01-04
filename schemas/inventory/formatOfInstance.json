@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "An instance format",
+  "FormatOfInstance": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "unique ID of the instance format; a UUID"
+      },
+      "name": {
+        "type": "string",
+        "description": "name of the instance format"
+      },
+      "code": {
+        "type": "string",
+        "description": "code of the instance format"
+      },
+      "source": {
+        "type": "string",
+        "description": "label indicating where the instance format entry originates from, i.e. 'folio', 'local' or 'rdacontent'"
+      },
+      "metadata": {
+        "type": "object",
+        "$ref": "../common/metadata.json#/Metadata",
+        "readonly": true
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "source"
+    ]
+  }
+}

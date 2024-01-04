@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A nature of content term",
+  "NatureOfContentTerm": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "unique ID of the nature of content term; a UUID"
+      },
+      "name": {
+        "type": "string",
+        "description": "name of the nature of content term"
+      },
+      "source": {
+        "type": "string",
+        "description": "label indicating where the nature of content term entry originates from, i.e. 'folio' or 'local'"
+      },
+      "metadata": {
+        "type": "object",
+        "$ref": "../common/metadata.json#/Metadata",
+        "readonly": true
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "source"
+    ]
+  }
+}

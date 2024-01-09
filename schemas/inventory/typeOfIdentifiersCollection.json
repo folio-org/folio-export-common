@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of Identifier types",
+  "TypeOfIdentifiersCollection": {
+    "type": "object",
+    "properties": {
+      "typesOfIdentifier": {
+        "description": "List of Identifier types",
+        "type": "array",
+        "items": {
+          "$ref": "typeOfIdentifier.json#/TypeOfIdentifier"
+        }
+      },
+      "totalRecords": {
+        "description": "Estimated or exact total number of records",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "typesOfIdentifier",
+      "totalRecords"
+    ]
+  }
+}
+

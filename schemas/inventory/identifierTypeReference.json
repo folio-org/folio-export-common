@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "An identifiers type",
+  "IdentifierTypeReference": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "unique ID of the identifier type; a UUID"
+      },
+      "name": {
+        "type": "string",
+        "description": "name of the identifier type"
+      },
+      "source": {
+        "type": "string",
+        "description": "label indicating where the identifier type entry originates from, i.e. 'folio' or 'local'"
+      },
+      "metadata": {
+        "type": "object",
+        "$ref": "../common/metadata.json#/Metadata"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "source"
+    ]
+  }
+}

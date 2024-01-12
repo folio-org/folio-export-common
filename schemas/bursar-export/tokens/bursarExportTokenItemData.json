@@ -1,0 +1,34 @@
+{
+  "description": "Token to represent item data",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of token",
+      "type": "string",
+      "default": "ItemData"
+    },
+    "value": {
+      "description": "Item data to represent",
+      "type": "string",
+      "enum": [
+        "BARCODE",
+        "NAME",
+        "MATERIAL_TYPE",
+        "INSTITUTION_ID",
+        "CAMPUS_ID",
+        "LIBRARY_ID",
+        "LOCATION_ID"
+      ]
+    },
+    "placeholder": {
+      "description": "Placeholder text to display when no value is available",
+      "type": "string"
+    },
+    "lengthControl": {
+      "description": "Control length of token",
+      "$ref": "bursarExportTokenLengthControl.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type", "value", "placeholder"]
+}

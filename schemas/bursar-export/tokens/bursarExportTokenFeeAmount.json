@@ -1,0 +1,21 @@
+{
+  "description": "Token to represent fee amount",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of data token",
+      "type": "string",
+      "default": "FeeAmount"
+    },
+    "decimal": {
+      "description": "Whether to return value with decimal",
+      "type": "boolean"
+    },
+    "lengthControl": {
+      "description": "Control length of the token",
+      "$ref": "bursarExportTokenLengthControl.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type", "decimal"]
+}

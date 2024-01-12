@@ -1,0 +1,17 @@
+{
+  "description": "Token to represent a constant used as an arbitrary string",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of data token",
+      "type": "string",
+      "default": "Constant"
+    },
+    "value": {
+      "description": "Value of the constant",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type", "value"]
+}

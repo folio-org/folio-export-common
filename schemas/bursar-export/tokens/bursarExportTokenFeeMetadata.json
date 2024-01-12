@@ -1,0 +1,22 @@
+{
+  "description": "Token to represent fee metadata",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of data token",
+      "type": "string",
+      "default": "FeeMetadata"
+    },
+    "value": {
+      "description": "Metadata to represent",
+      "type": "string",
+      "enum": ["FEE_FINE_TYPE_ID", "FEE_FINE_TYPE_NAME"]
+    },
+    "lengthControl": {
+      "description": "Control length of token",
+      "$ref": "bursarExportTokenLengthControl.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type", "value"]
+}

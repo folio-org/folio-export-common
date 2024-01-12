@@ -11,7 +11,7 @@
       "itemType": {
         "type": "string",
         "minLength": 1,
-        "maxLength": 1
+        "maxLength": 12
       },
       "itemDescription": {
         "type": "string",

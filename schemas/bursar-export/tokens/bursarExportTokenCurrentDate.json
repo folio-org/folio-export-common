@@ -1,0 +1,25 @@
+{
+  "description": "Token to represent part of date",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of data token",
+      "type": "string",
+      "default": "Date"
+    },
+    "value": {
+      "description": "Type of date value to represent",
+      "$ref": "bursarExportTokenDateType.json"
+    },
+    "timezone": {
+      "description": "Timezone to use for date",
+      "type": "string"
+    },
+    "lengthControl": {
+      "description": "Control length of the token",
+      "$ref": "bursarExportTokenLengthControl.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type", "value", "timezone"]
+}

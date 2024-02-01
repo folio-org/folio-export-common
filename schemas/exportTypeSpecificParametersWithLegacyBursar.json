@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Export parameters which depend on export type",
-  "ExportTypeSpecificParameters": {
+  "description": "Migration - Export parameters which depend on export type",
+  "ExportTypeSpecificParametersWithLegacyBursar": {
     "type": "object",
     "properties": {
       "bursarFeeFines": {
-        "$ref": "bursar-export/bursarExportJob.json"
+        "$ref": "bursar-export/legacy/legacyBursarFeeFines.json#/LegacyBursarFeeFines"
       },
       "vendorEdiOrdersExportConfig": {
         "$ref": "acquisitions/vendorEdiOrdersExportConfig.json#/VendorEdiOrdersExportConfig"

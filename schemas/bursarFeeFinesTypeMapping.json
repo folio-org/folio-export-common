@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Migration - Fees and fines for bursar type mapping",
-  "LegacyBursarFeeFinesTypeMapping": {
+  "description": "Fees and fines for bursar type mapping",
+  "BursarFeeFinesTypeMapping": {
     "type": "object",
     "properties": {
       "feefineTypeId": {

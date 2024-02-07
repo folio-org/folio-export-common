@@ -18,7 +18,7 @@
       "description": "Header format for the export file",
       "type": "array",
       "items": {
-        "$ref": "tokens/bursarExportHeaderFooter.json"
+        "$ref": "tokens/bursarExportHeaderFooterToken.json"
       }
     },
     "data": {
@@ -32,7 +32,7 @@
       "description": "Footer format for the export file",
       "type": "array",
       "items": {
-        "$ref": "tokens/bursarExportHeaderFooter.json"
+        "$ref": "tokens/bursarExportHeaderFooterToken.json"
       }
     },
     "transferInfo": {

@@ -226,6 +226,10 @@
       "lastCheckIn": {
         "description": "Information about when an item was last checked in",
         "$ref": "lastCheckIn.json#/LastCheckIn"
+      },
+      "displaySummary": {
+        "description": "A summary of the item",
+        "type": "string"
       }
     }
   }

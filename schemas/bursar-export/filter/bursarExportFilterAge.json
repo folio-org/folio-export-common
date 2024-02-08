@@ -1,0 +1,29 @@
+{
+  "description": "Filter by fees within certain days range",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of filter",
+      "type": "string",
+      "default": "Age"
+    },
+    "numDays": {
+      "description": "Number of days",
+      "type": "integer",
+      "minimum": 1
+    },
+    "condition": {
+      "description": "Condition to get days range",
+      "type": "string",
+      "enum": [
+        "LESS_THAN_EQUAL",
+        "LESS_THAN",
+        "GREATER_THAN",
+        "GREATER_THAN_EQUAL"
+      ]
+    }
+
+  },
+  "additionalProperties": false,
+  "required": ["type", "numDays", "condition"]
+}

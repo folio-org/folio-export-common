@@ -1,0 +1,13 @@
+{
+  "description": "Filter that is always true",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of filter",
+      "type": "string",
+      "default": "Pass"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type"]
+}

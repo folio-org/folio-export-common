@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Fees and fines for bursar export parameters",
-  "BursarFeeFines": {
+  "description": "Migration - Fees and fines for bursar export parameters",
+  "LegacyBursarFeeFines": {
     "type": "object",
     "properties": {
       "daysOutstanding": {
@@ -39,7 +39,7 @@
         "additionalProperties" : {
           "type": "array",
           "items": {
-            "$ref": "bursarFeeFinesTypeMapping.json#/BursarFeeFinesTypeMapping"
+            "$ref": "legacyBursarFeeFinesTypeMapping.json#/LegacyBursarFeeFinesTypeMapping"
           }
         }
       }

@@ -1,0 +1,36 @@
+{
+  "description": "Token to represent other data tokens depending on certain conditions",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of the data token",
+      "type": "string",
+      "default": "Conditional"
+    },
+    "conditions": {
+      "description": "Conditions to apply to the token",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": {
+            "description": "Condition to apply to the item",
+            "$ref": "../filter/bursarExportFilter.json"
+          },
+          "value": {
+            "description": "Data to represent if the condition is true",
+            "$ref": "bursarExportDataToken.json"
+          }
+        },
+        "additionalProperties": false,
+        "required": ["condition", "value"]
+      }
+    },
+    "else": {
+      "description": "Data to represent if no condition is true",
+      "$ref": "bursarExportDataToken.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["type", "conditions", "else"]
+}

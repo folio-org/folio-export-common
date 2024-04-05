@@ -4,6 +4,7 @@
   "CustomFieldTypes":{
     "type": "string",
     "enum": [
+      "DATE_PICKER",
       "RADIO_BUTTON",
       "SINGLE_CHECKBOX",
       "SINGLE_SELECT_DROPDOWN",

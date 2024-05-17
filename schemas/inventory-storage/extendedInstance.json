@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "An instance record with tenant id entity",
+  "description": "An instance record with tenant id",
   "tenantId":{
     "type": "string",
     "description": "ID for tenant"

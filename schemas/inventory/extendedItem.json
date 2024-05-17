@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "An item record with tenant id entity",
+  "tenantId":{
+    "type": "string",
+    "description": "ID for tenant"
+  },
+  "entity": {
+    "$ref": "item.json#/Item"
+  }
+}

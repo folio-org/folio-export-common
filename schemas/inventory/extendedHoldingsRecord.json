@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A holdings record with tenant id",
+  "ExtendedHoldingsRecord": {
+    "type": "object",
+    "properties": {
+      "tenantId": {
+        "type": "string",
+        "description": "ID for tenant"
+      },
+      "entity": {
+        "$ref": "holdingsRecord.json#/HoldingsRecord"
+      }
+    }
+  }
+}

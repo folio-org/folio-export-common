@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "An instance record with tenant id",
+  "ExtendedInstance": {
+    "type": "object",
+    "properties": {
+      "tenantId": {
+        "type": "string",
+        "description": "ID for tenant"
+      },
+      "entity": {
+        "$ref": "instance.json#/Instance"
+      }
+    }
+  }
+}

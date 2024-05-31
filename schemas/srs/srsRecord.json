@@ -5,9 +5,8 @@
   "SrsRecord": {
     "type": "object",
     "properties": {
-      "recordId": {
-        "type": "string",
-        "description": "ID of srs record"
+      "parsedRecord": {
+        "$ref": "parsedRecord.json#/ParsedRecord"
       }
     }
   }

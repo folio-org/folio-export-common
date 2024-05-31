@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "RawRecord Schema",
-  "description": "RawRecord Schema",
-  "RawRecord": {
+  "title": "ParsedRecord Schema",
+  "description": "ParsedRecord Schema",
+  "ParsedRecord": {
     "type": "object",
     "properties": {
       "content": {
         "type": "string",
-        "description": "Content of srs record in marc format"
+        "description": "Content of srs record in json format"
       }
     }
   }

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A JSON schema for the User Tenants Collection",
+  "UserTenantCollection": {
+    "type": "object",
+    "properties": {
+      "userTenants": {
+        "description": "List of user tenants",
+        "type": "array",
+        "items": {
+          "$ref": "userTenant.json#/UserTenant"
+        }
+      },
+      "totalRecords": {
+        "type": "integer"
+      }
+    }
+  }
+}

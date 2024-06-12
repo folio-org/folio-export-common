@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A user tenant record",
+  "UserTenant": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "User-tenant Id",
+        "type": "string",
+        "format": "uuid"
+      },
+      "userId": {
+        "type": "string",
+        "description": "User Id",
+        "format": "uuid"
+      },
+      "username": {
+        "type": "string",
+        "description": "Username"
+      },
+      "tenantId": {
+        "description": "Tenant Id",
+        "type": "string"
+      },
+      "tenantName": {
+        "description": "Tenant name",
+        "type": "string"
+      },
+      "isPrimary": {
+        "description": "Is primary",
+        "type": "boolean"
+      },
+      "centralTenantId": {
+        "description": "Central tenant Id",
+        "type": "string"
+      },
+      "consortiumId": {
+        "description": "Consortium Id",
+        "type": "string",
+        "format": "uuid"
+      },
+      "email": {
+        "description": "E-mail",
+        "type": "string"
+      },
+      "mobilePhoneNumber": {
+        "description": "Mobile phone number",
+        "type": "string"
+      },
+      "phoneNumber": {
+        "description": "Phone number",
+        "type": "string"
+      },
+      "additionalProperties": false,
+      "required": [
+        "userId",
+        "tenantId"
+      ]
+    }
+  }
+}

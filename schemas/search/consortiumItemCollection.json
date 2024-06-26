@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A collection of consortium holdings records",
+  "description": "A collection of consortium item records",
   "ConsortiumItemCollection": {
     "type": "object",
     "properties": {
-      "consortiumItemRecords": {
+      "items": {
         "description": "List of brief holdings records",
         "type": "array",
         "items": {

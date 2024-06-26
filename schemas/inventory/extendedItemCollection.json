@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of extended items",
+  "ExtendedItemCollection": {
+    "type": "object",
+    "properties": {
+      "extendedItems": {
+        "description": "List of extended items",
+        "type": "array",
+        "items": {
+          "$ref": "extendedItem.json#/ExtendedItem"
+        }
+      },
+      "totalRecords": {
+        "description": "Estimated or exact total number of records",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "extendedItems",
+      "totalRecords"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of extended holdings records",
+  "ExtendedHoldingsRecordCollection": {
+    "type": "object",
+    "properties": {
+      "extendedHoldingsRecords": {
+        "description": "List of extended holdings records",
+        "type": "array",
+        "items": {
+          "$ref": "extendedHoldingsRecord.json#/ExtendedHoldingsRecord"
+        }
+      },
+      "totalRecords": {
+        "type": "integer"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of extended item records",
+  "ExtendedItemCollection": {
+    "type": "object",
+    "properties": {
+      "extendedItems": {
+        "description": "List of extended item records",
+        "type": "array",
+        "items": {
+          "$ref": "extendedItem.json#/ExtendedItem"
+        }
+      },
+      "totalRecords": {
+        "type": "integer"
+      }
+    }
+  }
+}

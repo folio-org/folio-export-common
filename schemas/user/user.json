@@ -87,7 +87,7 @@
         "type": "object",
         "additionalProperties": true
       },
-      "preferredEmailCommunications": {
+      "preferredEmailCommunication": {
         "type": "array",
         "items": {
           "type": "string",
@@ -95,7 +95,7 @@
         },
         "maxItems": 3,
         "uniqueItems": true,
-        "description": "Preferred email communications types"
+        "description": "Preferred email communication types"
       }
     },
     "additionalProperties": false

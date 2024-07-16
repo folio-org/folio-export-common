@@ -4,7 +4,7 @@
   "BatchIdsDto": {
     "type": "object",
     "properties": {
-      "ids": {
+      "identifierValues": {
         "description": "Entity IDs",
         "type": "array",
         "items": {
@@ -17,14 +17,14 @@
         "description": "Identifier types",
         "type": "string",
         "enum": [
-          "ID",
-          "HRID",
-          "BARCODE",
-          "HOLDINGSRECORDID",
-          "ACCESSIONNUMBER",
-          "FORMERIDS",
-          "INSTANCEHRID",
-          "ITEMBARCODE"
+          "id",
+          "hrid",
+          "accessionNumber",
+          "formerIds",
+          "barcode",
+          "holdingsRecordId",
+          "instanceHrid",
+          "itemBarcode"
         ]
       }
     }

@@ -27,8 +27,7 @@
       "barcode": {
         "description": "Item barcode",
         "type": "string"
-      },
-      "additionalProperties": false
+      }
     }
   }
 }

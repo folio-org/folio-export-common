@@ -51,7 +51,6 @@
         "description": "Phone number",
         "type": "string"
       },
-      "additionalProperties": false,
       "required": [
         "userId",
         "tenantId"

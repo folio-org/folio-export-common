@@ -50,11 +50,7 @@
       "phoneNumber": {
         "description": "Phone number",
         "type": "string"
-      },
-      "required": [
-        "userId",
-        "tenantId"
-      ]
+      }
     }
   }
 }

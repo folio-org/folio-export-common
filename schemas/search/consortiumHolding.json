@@ -43,8 +43,7 @@
       "permanentLocationId": {
         "description": "Permanent Location ID",
         "type": "string"
-      },
-      "additionalProperties": false
+      }
     }
   }
 }

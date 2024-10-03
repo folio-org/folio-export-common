@@ -169,6 +169,14 @@
             "authorityId": {
               "type": "string",
               "description": "UUID of authority record that controls a subject heading"
+            },
+            "sourceId": {
+              "type": "string",
+              "description": "UUID of source that controls a subject heading"
+            },
+            "typeId": {
+              "type": "string",
+              "description": "UUID of type that controls a subject heading"
             }
           },
           "additionalProperties": false,

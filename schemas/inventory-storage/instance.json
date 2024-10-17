@@ -454,12 +454,6 @@
           "type": "string",
           "description": "Single UUID for the Instance nature of content"
         }
-    },
-    "isBoundWith": {
-      "description": "Indicates if this Instance is included in a bound-with",
-      "type": "boolean",
-      "default": false,
-      "readonly": true
       },
       "isBoundWith": {
         "description": "Indicates if this Instance is included in a bound-with",
@@ -576,4 +570,5 @@
       "title",
       "instanceTypeId"
     ]
+  }
 }

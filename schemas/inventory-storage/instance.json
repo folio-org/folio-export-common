@@ -18,63 +18,63 @@
       },
       "matchKey": {
         "type": "string",
-        "description" : "An unique instance identifier matching a client-side bibliographic record identification. Could be an actual local identifier or a key generated from metadata in the local bibliographic record. Enables the client to determine if a client side bibliographic record already exists as an Instance in Inventory"
+        "description": "An unique instance identifier matching a client-side bibliographic record identification. Could be an actual local identifier or a key generated from metadata in the local bibliographic record. Enables the client to determine if a client side bibliographic record already exists as an Instance in Inventory"
       },
       "source": {
         "type": "string",
         "description": "The metadata source and its format of the underlying record to the instance record. (e.g. FOLIO if it's a record created in Inventory;  MARC if it's a MARC record created in MARCcat or EPKB if it's a record coming from eHoldings)"
-    },
-    "parentInstances": {
-      "description": "Array of parent instances",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "description": "Id of the parent instance",
-            "type": "string"
+      },
+      "parentInstances": {
+        "description": "Array of parent instances",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "Id of the parent instance",
+              "type": "string"
+            },
+            "superInstanceId": {
+              "description": "Id of the super instance",
+              "type": "string"
+            },
+            "instanceRelationshipTypeId": {
+              "description": "Id of the relationship type",
+              "type": "string"
+            }
           },
-          "superInstanceId": {
-            "description": "Id of the super instance",
-            "type": "string"
+          "additionalProperties": false,
+          "required": [
+            "superInstanceId",
+            "instanceRelationshipTypeId"
+          ]
+        }
+      },
+      "childInstances": {
+        "description": "Child instances",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "subInstanceId": {
+              "description": "Id of sub Instance",
+              "type": "string"
+            },
+            "instanceRelationshipTypeId": {
+              "description": "Id of the relationship type",
+              "type": "string"
+            }
           },
-          "instanceRelationshipTypeId": {
-            "description": "Id of the relationship type",
-            "type": "string"
-          }
-        },
-        "additionalProperties": false,
-        "required": [
-          "superInstanceId",
-          "instanceRelationshipTypeId"
-        ]
-      }
-    },
-    "childInstances": {
-      "description": "Child instances",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "subInstanceId": {
-            "description": "Id of sub Instance",
-            "type": "string"
-          },
-          "instanceRelationshipTypeId": {
-            "description": "Id of the relationship type",
-            "type": "string"
-          }
-        },
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "subInstanceId",
-          "instanceRelationshipTypeId"
-        ]
-      }
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "subInstanceId",
+            "instanceRelationshipTypeId"
+          ]
+        }
       },
       "title": {
         "type": "string",
@@ -317,26 +317,26 @@
           ]
         }
       },
-    "dates": {
-      "type": "object",
-      "description": "Instance Dates",
-      "properties": {
-        "dateTypeId": {
-          "type": "string",
-          "description": "Date type ID"
-        },
-        "date1": {
-          "type": "string",
-          "description": "Date 1",
-          "maxLength": 4
-        },
-        "date2": {
-          "type": "string",
-          "description": "Date 2",
-          "maxLength": 4
+      "dates": {
+        "type": "object",
+        "description": "Instance Dates",
+        "properties": {
+          "dateTypeId": {
+            "type": "string",
+            "description": "Date type ID"
+          },
+          "date1": {
+            "type": "string",
+            "description": "Date 1",
+            "maxLength": 4
+          },
+          "date2": {
+            "type": "string",
+            "description": "Date 2",
+            "maxLength": 4
+          }
         }
-      }
-    },
+      },
       "instanceTypeId": {
         "type": "string",
         "description": "The unique term for the resource type whether it's from the RDA content term list of locally defined"
@@ -385,7 +385,7 @@
           }
         }
       },
-      "administrativeNotes":{
+      "administrativeNotes": {
         "type": "array",
         "description": "Administrative notes",
         "minItems": 0,
@@ -403,7 +403,7 @@
       },
       "previouslyHeld": {
         "type": "boolean",
-      "description": "Records the fact that the resource was previously held by the library for things like Hathi access, etc."
+        "description": "Records the fact that the resource was previously held by the library for things like Hathi access, etc."
       },
       "staffSuppress": {
         "type": "boolean",
@@ -411,19 +411,21 @@
       },
       "discoverySuppress": {
         "type": "boolean",
-      "description": "Records the fact that the record should not be displayed in a discovery system"
+        "description": "Records the fact that the record should not be displayed in a discovery system"
       },
       "statisticalCodeIds": {
         "type": "array",
         "description": "List of statistical code IDs",
         "items": {
           "type": "string"
-      }
+        }
       },
       "sourceRecordFormat": {
         "description": "Format of the instance source record, if a source record exists",
         "type": "string",
-        "enum": ["MARC-JSON"],
+        "enum": [
+          "MARC-JSON"
+        ],
         "readonly": true
       },
       "statusId": {
@@ -444,129 +446,129 @@
         "type": "object",
         "$ref": "../common/metadata.json#/Metadata"
       },
-        "readonly": true
-      },
-      "natureOfContentTermIds": {
-        "type": "array",
-        "description": "Array of UUID for the Instance nature of content (e.g. bibliography, biography, exhibition catalogue, festschrift, newspaper, proceedings, research report, thesis or website)",
-        "items": {
-          "type": "string",
-          "description": "Single UUID for the Instance nature of content"
-        }
+      "readonly": true
+    },
+    "natureOfContentTermIds": {
+      "type": "array",
+      "description": "Array of UUID for the Instance nature of content (e.g. bibliography, biography, exhibition catalogue, festschrift, newspaper, proceedings, research report, thesis or website)",
+      "items": {
+        "type": "string",
+        "description": "Single UUID for the Instance nature of content"
+      }
     },
     "isBoundWith": {
       "description": "Indicates if this Instance is included in a bound-with",
       "type": "boolean",
       "default": false,
       "readonly": true
-      },
-      "precedingTitles": {
-        "description": "Array of preceding titles",
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "description": "Id of the preceding title",
-              "type": "string",
-              "format": "uuid"
-            },
-            "precedingInstanceId": {
-              "description": "Id of the preceding instance id",
-              "type": "string",
-              "format": "uuid"
-            },
-            "title": {
-              "type": "string",
-              "description": "The primary title (or label) associated with the resource"
-            },
-            "hrid": {
-              "type": "string",
-              "description": "The human readable ID, also called eye readable ID. A system-assigned sequential ID which maps to the Instance ID"
-            },
-            "identifiers": {
-              "type": "array",
-              "description": "An extensible set of name-value pairs of identifiers associated with the resource",
-              "minItems": 0,
-              "items": {
-                "type": "object",
-                "properties": {
-                  "value": {
-                    "type": "string",
-                    "description": "Resource identifier value"
-                  },
-                  "identifierTypeId": {
-                    "type": "string",
-                    "description": "Resource identifier type (e.g. ISBN, ISSN, LCCN, CODEN, Locally defined identifiers)"
-                  }
-                },
-                "additionalProperties": false,
-                "required": [
-                  "value",
-                  "identifierTypeId"
-                ]
-              }
-            }
+    },
+    "precedingTitles": {
+      "description": "Array of preceding titles",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Id of the preceding title",
+            "type": "string",
+            "format": "uuid"
           },
-          "additionalProperties": false
-        }
-      },
-      "succeedingTitles": {
-        "description": "Array of succeeding titles",
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "description": "Id of the succeeding title",
-              "type": "string",
-              "format": "uuid"
-            },
-            "succeedingInstanceId": {
-              "description": "Id of the succeeding instance id",
-              "type": "string",
-              "format": "uuid"
-            },
-            "title": {
-              "type": "string",
-              "description": "The primary title (or label) associated with the resource"
-            },
-            "hrid": {
-              "type": "string",
-              "description": "The human readable ID, also called eye readable ID. A system-assigned sequential ID which maps to the Instance ID"
-            },
-            "identifiers": {
-              "type": "array",
-              "description": "An extensible set of name-value pairs of identifiers associated with the resource",
-              "minItems": 0,
-              "items": {
-                "type": "object",
-                "properties": {
-                  "value": {
-                    "type": "string",
-                    "description": "Resource identifier value"
-                  },
-                  "identifierTypeId": {
-                    "type": "string",
-                    "description": "Resource identifier type (e.g. ISBN, ISSN, LCCN, CODEN, Locally defined identifiers)"
-                  }
-                },
-                "additionalProperties": false,
-                "required": [
-                  "value",
-                  "identifierTypeId"
-                ]
-              }
-            }
+          "precedingInstanceId": {
+            "description": "Id of the preceding instance id",
+            "type": "string",
+            "format": "uuid"
           },
-          "additionalProperties": false
-        }
+          "title": {
+            "type": "string",
+            "description": "The primary title (or label) associated with the resource"
+          },
+          "hrid": {
+            "type": "string",
+            "description": "The human readable ID, also called eye readable ID. A system-assigned sequential ID which maps to the Instance ID"
+          },
+          "identifiers": {
+            "type": "array",
+            "description": "An extensible set of name-value pairs of identifiers associated with the resource",
+            "minItems": 0,
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "description": "Resource identifier value"
+                },
+                "identifierTypeId": {
+                  "type": "string",
+                  "description": "Resource identifier type (e.g. ISBN, ISSN, LCCN, CODEN, Locally defined identifiers)"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "value",
+                "identifierTypeId"
+              ]
+            }
+          }
+        },
+        "additionalProperties": false
       }
     },
-    "additionalProperties": false,
-    "required": [
-      "source",
-      "title",
-      "instanceTypeId"
-    ]
+    "succeedingTitles": {
+      "description": "Array of succeeding titles",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Id of the succeeding title",
+            "type": "string",
+            "format": "uuid"
+          },
+          "succeedingInstanceId": {
+            "description": "Id of the succeeding instance id",
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "description": "The primary title (or label) associated with the resource"
+          },
+          "hrid": {
+            "type": "string",
+            "description": "The human readable ID, also called eye readable ID. A system-assigned sequential ID which maps to the Instance ID"
+          },
+          "identifiers": {
+            "type": "array",
+            "description": "An extensible set of name-value pairs of identifiers associated with the resource",
+            "minItems": 0,
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "description": "Resource identifier value"
+                },
+                "identifierTypeId": {
+                  "type": "string",
+                  "description": "Resource identifier type (e.g. ISBN, ISSN, LCCN, CODEN, Locally defined identifiers)"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "value",
+                "identifierTypeId"
+              ]
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "source",
+    "title",
+    "instanceTypeId"
+  ]
 }

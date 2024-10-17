@@ -5,8 +5,8 @@
     "type": "object",
     "properties": {
       "id": {
-      "type": "string",
-      "description": "The system assigned unique ID of the instance record"
+        "type": "string",
+        "description": "The system assigned unique ID of the instance record"
       },
       "_version": {
         "type": "integer",

@@ -450,11 +450,16 @@
       "natureOfContentTermIds": {
         "type": "array",
         "description": "Array of UUID for the Instance nature of content (e.g. bibliography, biography, exhibition catalogue, festschrift, newspaper, proceedings, research report, thesis or website)",
-        "uniqueItems": true,
         "items": {
           "type": "string",
           "description": "Single UUID for the Instance nature of content"
         }
+    },
+    "isBoundWith": {
+      "description": "Indicates if this Instance is included in a bound-with",
+      "type": "boolean",
+      "default": false,
+      "readonly": true
       },
       "isBoundWith": {
         "description": "Indicates if this Instance is included in a bound-with",
@@ -571,5 +576,4 @@
       "title",
       "instanceTypeId"
     ]
-  }
 }

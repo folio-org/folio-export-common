@@ -126,7 +126,7 @@
             },
             "authorityId": {
               "type": "string",
-            "description": "UUID of authority record that controls an series title"
+              "description": "UUID of authority record that controls an series title"
             }
           },
           "additionalProperties": false,
@@ -294,7 +294,7 @@
           "properties": {
             "uri": {
               "type": "string",
-            "description": "Uniform Resource Identifier (URI) is a string of characters designed for unambiguous identification of resources"
+            "description": "Uniform Resource Identifier (URI) is a string of characters designed for unambiguous identification of resources"
             },
             "linkText": {
               "type": "string",
@@ -371,8 +371,6 @@
       "description": "Bibliographic notes (e.g. general notes, specialized notes), and administrative notes",
         "items": {
           "type": "object",
-          "description": "The set of notes used by the resource",
-          "additionalProperties": false,
           "properties": {
             "instanceNoteTypeId": {
               "type": "string",

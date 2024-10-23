@@ -475,7 +475,8 @@
       },
       "metadata": {
         "type": "object",
-        "$ref": "../common/metadata.json#/Metadata"
+        "$ref": "../common/metadata.json#/Metadata",
+        "readonly": true
       },
       "holdingsRecords2": {
         "type": "array",

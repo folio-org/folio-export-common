@@ -149,7 +149,7 @@
             },
             "identifierTypeId": {
               "type": "string",
-              "description": "UUID of resource identifier type (e.g. ISBN, ISSN, LCCN, CODEN, Locally defined identifiers)"
+              "description": "Resource identifier type (e.g. ISBN, ISSN, LCCN, CODEN, Locally defined identifiers)"
             },
             "identifierTypeObject": {
               "type": "object",
@@ -189,7 +189,7 @@
             },
             "authorityId": {
               "type": "string",
-              "description": "UUID of authority record that controls the contributor"
+              "description": "ID of authority record that controls the contributor"
             },
             "contributorNameType": {
               "type": "object",
@@ -251,7 +251,7 @@
             },
             "classificationTypeId": {
               "type": "string",
-              "description": "UUID of classification schema (e.g. LC, Canadian Classification, NLM, National Agricultural Library, UDC, and Dewey)"
+              "description": "List of classification schemas (e.g. LC, Canadian Classification, NLM, National Agricultural Library, UDC, and Dewey)"
             },
             "classificationType": {
               "type": "object",

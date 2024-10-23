@@ -149,7 +149,12 @@
             },
             "identifierTypeId": {
               "type": "string",
-              "description": "Resource identifier type (e.g. ISBN, ISSN, LCCN, CODEN, Locally defined identifiers)"
+              "description": "UUID of resource identifier type (e.g. ISBN, ISSN, LCCN, CODEN, Locally defined identifiers)"
+            },
+            "identifierTypeObject": {
+              "type": "object",
+              "description": "Information about identifier type, looked up from identifierTypeId",
+              "$ref": "../inventory/illPolicy.json#/IllPolicy"
             }
           },
           "additionalProperties": false,
@@ -184,7 +189,12 @@
             },
             "authorityId": {
               "type": "string",
-              "description": "ID of authority record that controls the contributor"
+              "description": "UUID of authority record that controls the contributor"
+            },
+            "contributorNameType": {
+              "type": "object",
+              "description": "Dereferenced contributor-name type",
+              "$ref": "contributorNameType.json#/ContributorNameType"
             },
             "primary": {
               "type": "boolean",
@@ -211,6 +221,14 @@
             "authorityId": {
               "type": "string",
               "description": "UUID of authority record that controls a subject heading"
+            },
+            "sourceId": {
+              "type": "string",
+              "description": "UUID of source that controls a subject heading"
+            },
+            "typeId": {
+              "type": "string",
+              "description": "UUID of type that controls a subject heading"
             }
           },
           "additionalProperties": false,
@@ -233,7 +251,12 @@
             },
             "classificationTypeId": {
               "type": "string",
-              "description": "List of classification schemas (e.g. LC, Canadian Classification, NLM, National Agricultural Library, UDC, and Dewey)"
+              "description": "UUID of classification schema (e.g. LC, Canadian Classification, NLM, National Agricultural Library, UDC, and Dewey)"
+            },
+            "classificationType": {
+              "type": "object",
+              "description": "Dereferenced classification schema",
+              "$ref": "classificationType.json#/ClassificationType"
             }
           },
           "additionalProperties": false,
@@ -348,6 +371,14 @@
           "type": "string"
         }
       },
+      "instanceFormats": {
+        "type": "array",
+        "description": "List of dereferenced instance formats",
+        "items": {
+          "type": "object",
+          "$ref": "formatOfInstance.json#/FormatOfInstance"
+        }
+      },
       "physicalDescriptions": {
         "type": "array",
         "description": "Physical description of the described resource, including its extent, dimensions, and such other physical details as a description of any accompanying materials and unit type and size",
@@ -444,7 +475,15 @@
       },
       "metadata": {
         "type": "object",
-        "$ref": "../common/metadata.json#/Metadata",
+        "$ref": "../common/metadata.json#/Metadata"
+      },
+      "holdingsRecords2": {
+        "type": "array",
+        "description": "List of holdings records",
+        "items": {
+          "type": "object",
+          "$ref": "../inventory/holdingsRecord.json#/HoldingsRecord"
+        },
         "readonly": true
       },
       "natureOfContentTermIds": {

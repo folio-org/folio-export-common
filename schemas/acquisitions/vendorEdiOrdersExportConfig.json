@@ -36,6 +36,30 @@
         "description": "If true then config is default",
         "type": "boolean",
         "default": false
+      },
+      "integrationType": {
+        "description": "Type of the integration",
+        "type": "string",
+        "enum": [
+          "Ordering",
+          "Claiming"
+        ]
+      },
+      "transmissionMethod": {
+        "description": "Transmission method",
+        "type": "string",
+        "enum": [
+          "FTP",
+          "File download"
+        ]
+      },
+      "fileFormat": {
+        "description": "File format",
+        "type": "string",
+        "enum": [
+          "CSV",
+          "EDI"
+        ]
       }
     }
   }

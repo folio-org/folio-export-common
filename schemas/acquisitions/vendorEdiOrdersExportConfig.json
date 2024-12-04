@@ -60,6 +60,14 @@
           "CSV",
           "EDI"
         ]
+      },
+      "claimPieceIds": {
+        "description": "Claim piece ids. Applicable only for Claiming integration type",
+        "type": "array",
+        "items": {
+          "description": "UUID of the piece",
+          "type": "string"
+        }
       }
     }
   }

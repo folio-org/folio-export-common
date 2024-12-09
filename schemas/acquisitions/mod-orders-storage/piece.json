@@ -157,7 +157,6 @@
         "readonly": true
       }
     },
-    "additionalProperties": false,
     "required": [
       "format",
       "poLineId",

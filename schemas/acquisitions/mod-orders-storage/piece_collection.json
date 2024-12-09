@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of piece records",
+  "PieceCollection": {
+    "type": "object",
+    "properties": {
+      "pieces": {
+        "description": "collection of piece records",
+        "type": "array",
+        "id": "pieces",
+        "items": {
+          "type": "object",
+          "$ref": "piece.json#/Piece"
+        }
+      },
+      "totalRecords": {
+        "description": "The number of objects contained in this collection",
+        "type": "integer"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "pieces",
+      "totalRecords"
+    ]
+  }
+}

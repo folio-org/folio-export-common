@@ -36,6 +36,13 @@
         "maximum": 0,
         "default": 0,
         "description": "Current number of errors"
+      },
+      "warnings": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 0,
+        "default": 0,
+        "description": "Current number of warnings"
       }
     }
   }

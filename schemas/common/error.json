@@ -10,8 +10,8 @@
         "description": "Error message text"
       },
       "type": {
-        "type": "string",
-        "description": "Error message type"
+        "description": "Error message type",
+        "$ref": "error_type.json#/ErrorType"
       },
       "code": {
         "type": "string",

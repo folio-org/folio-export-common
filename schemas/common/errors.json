@@ -12,8 +12,12 @@
           "$ref": "error.json#/Error"
         }
       },
-      "total_records": {
+      "total_error_records": {
         "description": "Total number of errors",
+        "type": "integer"
+      },
+      "total_warning_records": {
+        "description": "Total number of warnings",
         "type": "integer"
       }
     },

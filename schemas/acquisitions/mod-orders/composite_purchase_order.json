@@ -127,12 +127,12 @@
         ],
         "default": "Pending"
       },
-      "compositePoLines": {
-        "description": "a list of completely de-referenced purchase order lines",
+      "poLines": {
+        "description": "a list of purchase order lines",
         "type": "array",
         "items": {
           "type": "object",
-          "$ref": "composite_po_line.json#/CompositePoLine"
+          "$ref": "../mod-orders-storage/po_line.json#/PoLine"
         }
       },
       "acqUnitIds": {

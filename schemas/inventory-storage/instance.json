@@ -602,6 +602,11 @@
           },
           "additionalProperties": false
         }
+      },
+      "deleted": {
+        "type": "boolean",
+        "description": "Indicates whether the record was marked for deletion",
+        "default": false
       }
     },
     "additionalProperties": false,

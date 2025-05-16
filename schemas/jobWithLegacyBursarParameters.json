@@ -72,8 +72,7 @@
       },
       "outputFormat": {
         "description": "Job output format",
-        "type": "string",
-        "maxLength": 50
+        "type": "string"
       },
       "errorDetails": {
         "description": "Job error details",

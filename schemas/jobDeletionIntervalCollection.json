@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Collection of job deletion intervals",
+  "ExportConfigCollection": {
+    "type": "object",
+    "properties": {
+      "jobDeletionIntervals": {
+        "description": "List of intervals",
+        "type": "array",
+        "items": {
+          "$ref": "jobDeletionInterval.json#/JobDeletionInterval"
+        }
+      },
+      "totalRecords": {
+        "type": "integer"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "configs",
+      "totalRecords"
+    ]
+  }
+}

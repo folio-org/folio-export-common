@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Collection of job deletion intervals",
+  "JobDeletionIntervalCollection": {
+    "type": "object",
+    "properties": {
+      "jobDeletionIntervals": {
+        "type": "array",
+        "items": {
+          "$ref": "jobDeletionInterval.json#/JobDeletionInterval"
+        }
+      },
+      "totalRecords": {
+        "type": "integer"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "jobDeletionIntervals",
+      "totalRecords"
+    ]
+  }
+}

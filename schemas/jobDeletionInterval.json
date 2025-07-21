@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Interval for job deletion",
+  "JobDeletionInterval": {
+    "type": "object",
+    "properties": {
+      "exportType": {
+        "$ref": "exportType.json#/ExportType"
+      },
+      "retentionDays": {
+        "type": "integer",
+        "description": "Number of days to retain jobs of this type",
+        "minimum": 1
+      },
+      "metadata": {
+        "description": "Standard FOLIO metadata",
+        "$ref": "common/metadata.json#/Metadata"
+      }
+    },
+    "required": [
+      "exportType",
+      "retentionDays"
+    ]
+  }
+}

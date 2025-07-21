@@ -5,7 +5,6 @@
     "type": "object",
     "properties": {
       "jobDeletionIntervals": {
-        "description": "List of intervals",
         "type": "array",
         "items": {
           "$ref": "jobDeletionInterval.json#/JobDeletionInterval"

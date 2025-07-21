@@ -11,6 +11,10 @@
         "type": "integer",
         "description": "Number of days to retain jobs of this type",
         "minimum": 1
+      },
+      "metadata": {
+        "description": "Standard FOLIO metadata",
+        "$ref": "common/metadata.json#/Metadata"
       }
     },
     "required": [

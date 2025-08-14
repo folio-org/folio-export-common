@@ -25,6 +25,10 @@
       "quantityPhysical": {
         "description": "quantity of physical items",
         "type": "integer"
+      },
+      "tenantId": {
+        "description": "Associated tenant for ECS-enabled clusters with Central Ordering enabled",
+        "type": "string"
       }
     },
     "additionalProperties": false

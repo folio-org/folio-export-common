@@ -56,6 +56,10 @@
         "type": "string",
         "description": "New source file ID"
       },
+      "shared": {
+        "type": "boolean",
+        "description": "True if authority is shared between multiple tenants"
+      },
       "lbTotal": {
         "type": "integer",
         "description": "Amount of linked bib fields"

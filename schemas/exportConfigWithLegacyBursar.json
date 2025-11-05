@@ -11,6 +11,10 @@
         "description": "Export type",
         "$ref": "exportType.json#/ExportType"
       },
+      "configName": {
+        "description": "Configuration name",
+        "type": "string"
+      },
       "tenant": {
         "description": "Tenant id",
         "type": "string"

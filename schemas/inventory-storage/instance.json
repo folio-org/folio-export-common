@@ -607,6 +607,10 @@
         "type": "boolean",
         "description": "Indicates whether the record was marked for deletion",
         "default": false
+      },
+      "sourceUri": {
+        "type": "string",
+        "description": "Source URI"
       }
     },
     "additionalProperties": false,

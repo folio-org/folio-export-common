@@ -20,7 +20,7 @@
       "consortiumNext": {
         "type": "string",
         "format": "date-time",
-        "description": "Next response item date to seek by"
+        "description": "Next consortium response item date to seek by"
       }
     },
     "required": [

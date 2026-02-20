@@ -50,7 +50,8 @@
         "type": "string",
         "enum": [
           "FTP",
-          "File download"
+          "File download",
+          "Email"
         ]
       },
       "fileFormat": {

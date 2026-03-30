@@ -62,8 +62,7 @@
         "type": "string",
         "enum": [
           "CSV",
-          "EDI",
-          "EML"
+          "EDI"
         ]
       },
       "claimPieceIds": {

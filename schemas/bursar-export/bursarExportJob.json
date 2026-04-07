@@ -38,6 +38,10 @@
     "transferInfo": {
       "description": "Transfer information for the export",
       "$ref": "transfer/bursarExportTransferCriteria.json"
+    },
+    "dryRun": {
+      "description": "Whether this export is a dry run (i.e. no actual transfer will be performed)",
+      "type": "boolean"
     }
   },
   "additionalProperties": false,

@@ -33,7 +33,7 @@
         }
       },
       "additionalProperties": false,
-      "required": ["account"]
+      "required": []
     }
   },
   "additionalProperties": false,

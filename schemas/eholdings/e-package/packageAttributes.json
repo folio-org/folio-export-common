@@ -99,6 +99,14 @@
         "description": "Visibility data",
         "$ref": "../visibilityData.json#/VisibilityData"
       },
+      "visibility": {
+        "type": "array",
+        "description": "Visibility details per category",
+        "items": {
+          "type": "object",
+          "$ref": "packageVisibility.json#/PackageVisibility"
+        }
+      },
       "allowKbToAddTitles": {
         "type": "boolean",
         "description": "Allow KB to add titles",

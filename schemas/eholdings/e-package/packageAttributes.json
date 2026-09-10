@@ -121,6 +121,10 @@
         "type": "object",
         "description": "Package tags",
         "$ref": "../tags.json#/Tags"
+      },
+      "url": {
+        "type": "string",
+        "description": "Package URL"
       }
     }
   }

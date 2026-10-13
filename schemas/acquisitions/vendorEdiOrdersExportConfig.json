@@ -74,7 +74,7 @@
         }
       },
       "poLineIds": {
-        "description": "PO line ids to export manually, ignoring automaticExport/manualPo flags. Applicable only for Ordering integration type",
+        "description": "PO line ids for a manual orders export; used only if the job parameter manualExecution is true. Restricts the export to these PO lines and skips the automaticExport/manualPo checks; all other configuration filters still apply.",
         "type": "array",
         "items": {
           "description": "UUID of the PO line",

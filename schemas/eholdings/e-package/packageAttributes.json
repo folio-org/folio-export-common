@@ -125,6 +125,14 @@
       "url": {
         "type": "string",
         "description": "Package URL"
+      },
+      "subjects": {
+        "type": "array",
+        "description": "Managed and custom subjects of the package",
+        "items": {
+          "type": "object",
+          "$ref": "packageSubject.json#/PackageSubject"
+        }
       }
     }
   }

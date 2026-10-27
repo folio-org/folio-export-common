@@ -149,6 +149,14 @@
         "description": "Visibility data. Note that this attribute can be updated both for CUSTOM AND MANAGED RESOURCES.",
         "$ref": "../visibilityData.json#/VisibilityData"
       },
+      "visibility": {
+        "type": "array",
+        "description": "Visibility details per category (PF, FTF, MARC)",
+        "items": {
+          "type": "object",
+          "$ref": "../e-package/packageVisibility.json#/PackageVisibility"
+        }
+      },
       "managedCoverages": {
         "type": "array",
         "description": "List of Managed Coverages information",

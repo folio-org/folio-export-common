@@ -154,7 +154,7 @@
         "description": "Visibility details per category (PF, FTF, MARC)",
         "items": {
           "type": "object",
-          "$ref": "../e-package/packageVisibility.json#/PackageVisibility"
+          "$ref": "../visibility.json#/Visibility"
         }
       },
       "managedCoverages": {

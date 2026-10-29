@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Package Visibility Schema",
-  "description": "Package Visibility Schema",
-  "PackageVisibility": {
+  "title": "Visibility Schema",
+  "description": "Visibility of a package or resource in one category",
+  "Visibility": {
     "type": "object",
     "properties": {
       "category": {

@@ -99,7 +99,7 @@
         "description": "Visibility details per category",
         "items": {
           "type": "object",
-          "$ref": "packageVisibility.json#/PackageVisibility"
+          "$ref": "../visibility.json#/Visibility"
         }
       },
       "allowKbToAddTitles": {

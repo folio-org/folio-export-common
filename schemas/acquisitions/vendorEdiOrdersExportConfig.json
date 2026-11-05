@@ -10,9 +10,13 @@
         "format": "uuid"
       },
       "vendorId": {
-        "description": "UUID of the acquisition method",
+        "description": "UUID of the vendor",
         "type": "string",
         "format": "uuid"
+      },
+      "vendorName": {
+        "description": "Name of the vendor",
+        "type": "string"
       },
       "configName": {
         "description": "Configuration name",

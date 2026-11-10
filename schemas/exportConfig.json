@@ -56,6 +56,10 @@
             "SUNDAY"
           ]
         }
+      },
+      "metadata": {
+        "description": "Standard FOLIO metadata",
+        "$ref": "common/metadata.json#/Metadata"
       }
     },
     "additionalProperties": false,
